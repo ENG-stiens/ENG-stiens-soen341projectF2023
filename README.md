@@ -52,3 +52,9 @@ We are building a real estate web application designed to streamline property tr
 - Eden:
 - Kermina:
 - Vanisha:
+
+## Project Approach and Technology
+
+Approach: We have adopted an Agile development methodology for this project, which emphasizes flexibility, collaboration, and iterative progress. Agile permits us to adapt to changing requirements. This ensures that the project aligns closely with the needs and expectations of our stakeholders (aka the TAs).
+
+Technology: For this project we will be using HTML, JavaScript and PHP.
