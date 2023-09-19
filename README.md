@@ -50,7 +50,7 @@ We are building a real estate web application designed to streamline property tr
 - Julie: Responsible for Wiki page (User stories and Task breakdown derived from user stories)
 - Sarah: Responsible for README File (Description and Team Member Roles)
 - Eden: Responsible for planning the next sprint
-- Kermina:
+- Kermina: Responsible for Meeting minutes and Organization/presentation
 - Vanisha: Responsible for detailed log of each team contribution
 
 ## Project Approach and Technology
