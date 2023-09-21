@@ -5,7 +5,7 @@
 - Julie Makary (40243160)
 - Sarah Ohayon (40209765)
 - Eden Oliel (40211989)
-- Kermina Sourial (4024964)
+- Kermina Sourial (40249648)
 - Vanisha Patel (40242554)
 
 ## Project Description
