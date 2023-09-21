@@ -71,7 +71,7 @@ As a property renter, I want to be able to search for property based on the loca
    
 3. Broker:
 
-As a broker, I need to sumbit offers for buying properties on behalf of my clients 
+As a broker, I need to sumbit offers for buying properties on behalf of my clients so that I can also track the status of the offers. Through the website, I want to also request a property visit for my clients. When I present a property, I want to review and manage the offers made by the homebuyers. 
 
   
 4. System adminstartor:
