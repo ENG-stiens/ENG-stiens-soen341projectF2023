@@ -71,7 +71,12 @@ As a property renter, I want to be able to search for property based on the loca
    
 3. Broker:
 
-As a broker, I need to sumbit offers for buying properties on behalf of my clients so that I can also track the status of the offers. Through the website, I want to also request a property visit for my clients. When I present a property, I want to review and manage the offers made by the homebuyers. 
+As a broker, I need to sumbit offers for buying properties on behalf of my clients so that I can also track the status of the offers. Through the website, I want to also request a property visit for my clients. For my appointments, I need a tool that allows me to manage my visits by rescheduling or cancelling. Also, when I present a property, I want to review and manage the offers made by the homebuyers. Matching properties to potential buyers based on their preferances is also very important for a broker. As a broker, I also need to create, read, update and delete properties.  
 
   
 4. System adminstartor:
+
+As a system administrator, I need to create, read, update and delete brokers from the website to keep it authentic and reliable.
+
+
+
