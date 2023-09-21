@@ -61,6 +61,15 @@ Technology: For this project we will be using HTML, JavaScript and PHP.
 
 ## User Stories
 1. Homebuyer:
+As a homebuyer, I want to be able to search for property based on the location, number of rooms and the year it was built. This type of search allows a better expereince as a user to find a convient property. If I find a home that I like then I would save it as a favourite which made my home seletion a lot easier and accessible.   
+
+ 
 2. Property renter:
+
+
+   
 3. Broker:
+
+
+  
 4. System adminstartor:
