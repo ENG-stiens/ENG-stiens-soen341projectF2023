@@ -7,6 +7,7 @@
 - Eden Oliel (40211989)
 - Kermina Sourial (40249648)
 - Vanisha Patel (40242554)
+- Oleksandra Tsurkan (40250827)
 
 ## Project Description
 
@@ -52,6 +53,7 @@ We are building a real estate web application designed to streamline property tr
 - Eden: Responsible for planning the next sprint
 - Kermina: Responsible for Meeting minutes and Organization/presentation
 - Vanisha: Responsible for detailed log of each team contribution
+- Oleksandra: Submitting necessary documents through moodle.
  
 ## Project Approach and Technology
 
