@@ -52,11 +52,15 @@ We are building a real estate web application designed to streamline property tr
 - Eden: Responsible for planning the next sprint
 - Kermina: Responsible for Meeting minutes and Organization/presentation
 - Vanisha: Responsible for detailed log of each team contribution
-
-## User Stories 
-
+ 
 ## Project Approach and Technology
 
 Approach: We have adopted an Agile development methodology for this project, which emphasizes flexibility, collaboration, and iterative progress. Agile permits us to adapt to changing requirements. This ensures that the project aligns closely with the needs and expectations of our stakeholders (aka the TAs).
 
 Technology: For this project we will be using HTML, JavaScript and PHP.
+
+## User Stories
+1. Homebuyer:
+2. Property renter:
+3. Broker:
+4. System adminstartor:
