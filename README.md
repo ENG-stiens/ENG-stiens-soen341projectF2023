@@ -53,7 +53,7 @@ We are building a real estate web application designed to streamline property tr
 - Eden: Responsible for planning the next sprint
 - Kermina: Responsible for Meeting minutes and Organization/presentation
 - Vanisha: Responsible for detailed log of each team contribution
-- Oleksandra: Submitting necessary documents through moodle.
+- Oleksandra: Submitting necessary documents through moodle and for Project Approach and Technology section.
  
 ## Project Approach and Technology
 
