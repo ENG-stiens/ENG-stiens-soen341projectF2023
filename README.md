@@ -64,21 +64,21 @@ Technology: For this project we will be using HTML, JavaScript and PHP.
 ## User Stories
 ### 1. Homebuyer:
 
-As a homebuyer, I want to be able to search for property based on the location, number of rooms and the year it was built. This type of search allows a better experience as a user to find a convient property. If I find a home that I like then I would save it as a favourite which would make my home seletion a lot easier and accessible. Brokers are an important aspect when buying a house, therefore I need to search for bokers and select the one I am most comfortable with. Through the real estate website, I need to request a property visit to be able to get a better look at the house before I make a descision. Based on the mortgage calculator, I am able to see how much I would need to pay monthly based on loan amount and intrest rate.     
+As a homebuyer, I want to be able to login into my account to search for property based on the location, number of rooms and the year it was built. This type of search allows a better experience as a user to find a convient property. If I find a home that I like then I would save it as a favourite which would make my home seletion a lot easier and accessible. Brokers are an important aspect when buying a house, therefore I need to search for brokers and select the one I am most comfortable with. Through the real estate website, I need to request a property visit to be able to get a better look at the house before I make a descision. Based on the mortgage calculator, I am able to see how much I would need to pay monthly based on loan amount and intrest rate.     
  
 ### 2. Property renter:
 
-As a property renter, I want to be able to search for property based on the location, number of rooms and the year it was built. This type of search allows a better expereince as a user to find a convient property. If I find a home that I like then I would save it as a favourite which makes my home seletion a lot easier and accessible. Brokers are an important aspect when buying a house, therefore I need to search for bokers and select the one I am most comfortable with. Through the real estate website, I need to request a property visit to be able to get a better look at the house before I make a descision.
+As a property renter, I want to be able to login into my account to search for property based on the location, number of rooms and the year it was built. This type of search allows a better expereince as a renter to find a convient property. If I find a home that I like then I would save it as a favourite which makes my home seletion a lot easier and accessible. Brokers are an important aspect when buying a house, therefore I need to search for brokers and select the one I am most comfortable with. Through the real estate website, I need to request a property visit to be able to get a better look at the house before I make a descision.
 
    
 ### 3. Broker:
 
-As a broker, I need to sumbit offers for buying properties on behalf of my clients so that I can also track the status of the offers. Through the website, I want to also request a property visit for my clients. For my appointments, I need a tool that allows me to manage my visits by rescheduling or cancelling. Also, when I present a property, I want to review and manage the offers made by the homebuyers. Matching properties to potential buyers based on their preferances is also very important for a broker. As a broker, I also need to create, read, update and delete properties.  
+As a broker, I need to login into my account to sumbit offers for buying properties on behalf of my clients so that I can also track the status of the offers. Through the website, I want to also request a property visit for my clients. For my appointments, I need a tool that allows me to manage my visits by rescheduling or cancelling. Also, when I present a property, I want to review and manage the offers made by the homebuyers. Matching properties to potential buyers based on their preferances is also very important for a broker. As a broker, I also need to create, read, update and delete properties.  
 
   
 ### 4. System adminstartor:
 
-As a system administrator, I need to create, read, update and delete brokers from the website to keep it authentic and reliable.
+As a system administrator, I need to login into my account to create, read, update and delete brokers from the website to keep it authentic and reliable.
 
 
 
