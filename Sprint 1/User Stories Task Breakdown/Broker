@@ -1,1 +1,19 @@
+As a broker, I want to submit offers for buying properties in behalf of their clients.
 
+
+As a broker, I want to purchase offers to properties listed to other brokers.
+
+
+As a broker, I want to execute CRUD operations on property listings.
+
+
+As a broker, I want to match properties to client’s requirements.
+
+
+As a broker, I want to manage the offers a property is receiving to compare customers offers.
+
+
+As a broker, I want to manage property visits by accepting a visit request, rescheduling visits and canceling visits.
+
+
+As a broker, I want to have a profile that displays my personal information, my properties, my client’s contact information, and scheduled visits/appointments.
