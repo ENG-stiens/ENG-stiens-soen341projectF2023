@@ -61,31 +61,31 @@ Approach: We have adopted an Agile development methodology for this project, whi
 
 Technology: To accomplish a fully functioning real-estate website, many languages and frameworks can be used. Here's a brief over view of the possibilities.
 
-Front-end:
+**Front-end:
 - HTML
-  -pros: Universality (accessible on all browsers), familiarity
-  -cons: Requires additional CSS for styling
+  - pros: Universality (accessible on all browsers), familiarity
+  - cons: Requires additional CSS for styling
   
 - Javascript
-  -pros: Allows dynamic content, familiarity, broad library support
-  -cons: Can impact load time if it's a heavy-duty project, needs to be optimised
+  - pros: Allows dynamic content, familiarity, broad library support
+  - cons: Can impact load time if it's a heavy-duty project, needs to be optimised
   
 - Angular.js
-  -pros: Efficient (two-way data binding and dynamic), unfamiliarity
-  -cons: Steep learning curve, heavyweight for smaller projects (can affect performance)
+  - pros: Efficient (two-way data binding and dynamic), unfamiliarity
+  - cons: Steep learning curve, heavyweight for smaller projects (can affect performance)
 
-Backend: 
--PHP
-  -pros: Efficient for handling the server, familiarity
-  -cons: May not be as fast as othe backend technologies
+**Backend: 
+- PHP
+  - pros: Efficient for handling the server, familiarity
+  - cons: May not be as fast as othe backend technologies
   
--Django (Python)
-  -pros: Offers strong security, robust
-  -cons: Steep learning curve, heavyweight for smaller projects
+- Django (Python)
+  - pros: Offers strong security, robust
+  - cons: Steep learning curve, heavyweight for smaller projects
   
--Express.js
-  -pros: Easy to learn, good performance
-  -cons: less guidance (because it's less popular)
+- Express.js
+  - pros: Easy to learn, good performance
+  - cons: less guidance (because it's less popular)
 
 For this project we will be using HTML, JavaScript and PHP. To make this choice, we looked among other things at feasibility, compatibility, cost-efficieny. 
 There are many benefits to use these languages to accomplish our project. Firstly, most of the people on the team are familiar with these languages. This would facilitate the communication and collaboration among team members as they work on the project. Also, the languages we have chosen are cross-platform compatible. This feature is particularly beneficial as our team members who use various types of computers, ensuring that everyone can contribute without compatibility issues. In addition, the languages will ensure that our final product is available on different types of browsers and platforms, thus reaching more users. Also, using these ressources are cost-efficient as the team does not need to invest in any additional software or tool development. These technologies are open-source, allowing us to use multiple libraries and frameworks that can easily speed up out developping process. In concusion, choosing to use HTML, JavaScript and PHP is a good strategic decision that is leveraging familiarity, cross-platform compatibility, cost-efficiency and flexibility. 
