@@ -59,7 +59,7 @@ We are building a real estate web application designed to streamline property tr
 
 Approach: We have adopted an Agile development methodology for this project, which emphasizes flexibility, collaboration, and iterative progress. Agile permits us to adapt to changing requirements. This ensures that the project aligns closely with the needs and expectations of our stakeholders (aka the TAs).
 
-Technology: For this project we will be using HTML, JavaScript and PHP.
+Technology: For this project we will be using HTML, JavaScript and PHP. There are many benefits to use these languages to accomplish our prpject. Firstly, most of the people on the team are familiar with these languages. This would facilitate the communication and collaboration among team members as they work on the project. Also, the languages we have chosen are cross-platform compatible. This feature is particularly beneficial as our team members who use various types of computers, ensuring that everyone can contribute without compatibility issues. In addition, the languages will ensure that our final product is available on different types of browsers and platforms, thus reaching more users. Also, using these ressources are cost-efficient as the team does not need to invest in any additional software or tool development. These technologies are open-source, allowing us to use multiple libraries and frameworks that can easily speed up out developping process. In concusion, choosing to use HTML, JavaScript and PHP is a good strategic decision that is leveraging familiarity, cross-platform compatibility, cost-efficiency and flexibility. 
 
 ## User Stories
 ### 1. Homebuyer:
