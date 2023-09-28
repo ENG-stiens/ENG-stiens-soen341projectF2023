@@ -61,7 +61,7 @@ Approach: We have adopted an Agile development methodology for this project, whi
 
 Technology: To accomplish a fully functioning real-estate website, many languages and frameworks can be used. Here's a brief over view of the possibilities.
 
-**Front-end:
+**Front-end:**
 - HTML
   - pros: Universality (accessible on all browsers), familiarity
   - cons: Requires additional CSS for styling
@@ -74,7 +74,7 @@ Technology: To accomplish a fully functioning real-estate website, many language
   - pros: Efficient (two-way data binding and dynamic), unfamiliarity
   - cons: Steep learning curve, heavyweight for smaller projects (can affect performance)
 
-**Backend: 
+**Backend:** 
 - PHP
   - pros: Efficient for handling the server, familiarity
   - cons: May not be as fast as othe backend technologies
