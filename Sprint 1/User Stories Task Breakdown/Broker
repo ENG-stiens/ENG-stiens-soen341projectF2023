@@ -18,12 +18,17 @@ As a broker, I want to manage property visits by accepting a visit request, resc
 
 As a broker, I want to have a profile that displays my personal information, my properties, my client’s contact information, and scheduled visits/appointments.
 
+
 As a broker, I want to create an account.
+
 
 As a broker, I want to reset my password.
 
+
 As a broker, I want to have 2-factor authorization.
 
+
 As a broker, I want to recive notification when my clients message me through the webiste.
+
 
 As a broker, I want to have a log book of my clients. 
