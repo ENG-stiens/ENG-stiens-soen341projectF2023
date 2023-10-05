@@ -112,6 +112,7 @@ As a broker, I need to login into my account to sumbit offers for buying propert
 As a system administrator, I need to login into my account to create, read, update and delete brokers from the website to keep it authentic and reliable.
 
 
+
 ### Reference to Wiki
 For additional information regarding sprint planning, git rules and guidelines, please refer to our Wiki section (https://github.com/ENG-stiens/ENG-stiens-soen341projectF2023/wiki).
 
