@@ -3,31 +3,31 @@
 ## Eng-Steins Group
 ## Team Roles
 
-###Julie(40243160):
-#### - Responsible for Wiki page (User stories and Task breakdown derived from user stories)
-#### Back-end developer
-#### QA: acceptance test 
+#### Julie(40243160):
+-Responsible for Wiki page (User stories and Task breakdown derived from user stories)
+-Back-end developer
+-QA: acceptance test 
 
-Sarah(40209765): 
- Responsible for README File (Description and Team Member Roles)
- Front-end developer
+#### Sarah(40209765): 
+-Responsible for README File (Description and Team Member Roles)
+-Front-end developer
 
-Eden(40211989):
- Responsible for planning the next sprints
- Back-end developer
+#### Eden(40211989):
+-Responsible for planning the next sprints
+-Back-end developer
 
-Kermina(40249648):
- Responsible for Meeting minutes and Organization/presentation
- Back-end developer
+#### Kermina(40249648):
+-Responsible for Meeting minutes and Organization/presentation
+-Back-end developer
  
-Vanisha(40242554):
- Responsible for detailed log of each team contribution
- Front-end developer
+#### Vanisha(40242554):
+-Responsible for detailed log of each team contribution
+-Front-end developer
 
-Oleksandra(40250827):
- Submitting necessary documents through moodle and for Project Approach and Technology section.
- Front-end developer
- QA: acceptance test 
+#### Oleksandra(40250827):
+-Submitting necessary documents through moodle and for Project Approach and Technology section.
+-Front-end developer
+-QA: acceptance test 
 
 ## Project Description
 
