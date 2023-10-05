@@ -1,13 +1,33 @@
 # Software Process Team Project
 
 ## Eng-Steins Group
+## Team Roles
 
-- Julie Makary (40243160)
-- Sarah Ohayon (40209765)
-- Eden Oliel (40211989)
-- Kermina Sourial (40249648)
-- Vanisha Patel (40242554)
-- Oleksandra Tsurkan (40250827)
+Julie(40243160):
+ Responsible for Wiki page (User stories and Task breakdown derived from user stories)
+ Back-end developer
+ QA: acceptance test 
+
+Sarah(40209765): 
+ Responsible for README File (Description and Team Member Roles)
+ Front-end developer
+
+Eden(40211989):
+ Responsible for planning the next sprints
+ Back-end developer
+
+Kermina(40249648):
+ Responsible for Meeting minutes and Organization/presentation
+ Back-end developer
+ 
+Vanisha(40242554):
+ Responsible for detailed log of each team contribution
+ Front-end developer
+
+Oleksandra(40250827):
+ Submitting necessary documents through moodle and for Project Approach and Technology section.
+ Front-end developer
+ QA: acceptance test 
 
 ## Project Description
 
@@ -45,15 +65,6 @@ We are building a real estate web application designed to streamline property tr
 - Detailed logs of each team member's contributions
 - Meeting minutes (private folder)
 - Organization and presentation
-
-## Team Roles
-
-- Julie: Responsible for Wiki page (User stories and Task breakdown derived from user stories)
-- Sarah: Responsible for README File (Description and Team Member Roles)
-- Eden: Responsible for planning the next sprint
-- Kermina: Responsible for Meeting minutes and Organization/presentation
-- Vanisha: Responsible for detailed log of each team contribution
-- Oleksandra: Submitting necessary documents through moodle and for Project Approach and Technology section.
  
 ## Project Approach and Technology
 
