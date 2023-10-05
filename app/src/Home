@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ENG-Steins</title>
+  <style>
+    body {
+      color: #0c69f4;
+      font-family: Arial, sans-serif;
+      background-image: url("house.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    nav {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 25%;
+      height: calc(100% - 50px);
+      background-color: white;
+      background-color: #5FCCC3;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 20px;
+      margin-bottom: 45px;
+      text-decoration: none;
+      color: #0c69f4;
+    }
+
+    .nav-link:hover {
+      background-color: white;
+      color: #0c69f4;
+    }
+
+    .content {
+      margin-left: 25%;
+      padding: 50px;
+    }
+
+    .content h2 {
+      color: #0c69f4;
+    }
+
+    .privacy-disclaimer-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .privacy-disclaimer-content {
+      background-color: #fff;
+      padding: 20px;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .privacy-disclaimer-content h2 {
+      margin-top: 0;
+    }
+
+    .privacy-disclaimer-content p {
+      margin-bottom: 20px;
+    }
+
+    .privacy-disclaimer-close {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .privacy-disclaimer-close:hover {
+      background-color: #3E8E41;
+    }
+  </style>
+</head>
+
+<body>
+  <?php session_start();?>
+  <div content="navigaton">
+    <nav>
+      <a class="nav-link" href="home.php" target=_self>Home</a>
+      <a class="nav-link" href="Findadogcat.php" target=_self>Homebuyer</a>
+      <a class="nav-link" href="DogCare.php" target=_self>Broker</a>
+      <a class="nav-link" href="CatCare.php" target=_self>Search Properties</a>
+      <a class="nav-link" href="ContactUs.php" target=_self>Contact Us</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <h2>About Us</h2>
+    <p>We are an organization dedicated to helping you find your dream home. </p>
+  </div>
+
+  <div id="privacy-disclaimer-popup" class="privacy-disclaimer-popup">
+    <div class="privacy-disclaimer-content">
+    <h2>Privacy Disclaimer</h2>
+    <p>We take your privacy seriously. This website uses cookies to improve your browsing experience and to personalize the content and advertising we show you. We may also collect personal information from you if you choose to subscribe to our newsletter or contact us through our website.</p>
+    <p>We will never sell or rent your personal information to third parties without your consent, unless required by law. However, we may share your information with trusted third-party service providers who assist us in operating our website or servicing you.</p>
+    <p>By using our website, you consent to our use of cookies and collection of your personal information. If you do not agree with this policy, please do not use our website.</p>
+    <a href="#" class="privacy-disclaimer-close">Close</a>
+  </div>
+</div>
+
+<script>
+var privacyDisclaimerPopup = document.getElementById("privacy-disclaimer-popup");
+var privacyDisclaimerClose = document.getElementsByClassName("privacy-disclaimer-close")[0];
+
+privacyDisclaimerPopup.style.display = "block";
+
+privacyDisclaimerClose.onclick = function() {
+  privacyDisclaimerPopup.style.display = "none";
+}
+</script>
+<?php include 'HeaderFooter.php';?>
+</body>
+</html>
