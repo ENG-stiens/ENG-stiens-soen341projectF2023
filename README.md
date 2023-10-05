@@ -113,7 +113,7 @@ As a system administrator, I need to login into my account to create, read, upda
 
 
 
-### Reference to Wiki
+## Reference to Wiki
 For additional information regarding sprint planning, git rules and guidelines, please refer to our Wiki section (https://github.com/ENG-stiens/ENG-stiens-soen341projectF2023/wiki).
 
 
