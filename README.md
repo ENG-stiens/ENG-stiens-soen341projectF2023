@@ -3,10 +3,10 @@
 ## Eng-Steins Group
 ## Team Roles
 
-Julie(40243160):
- Responsible for Wiki page (User stories and Task breakdown derived from user stories)
- Back-end developer
- QA: acceptance test 
+###Julie(40243160):
+#### - Responsible for Wiki page (User stories and Task breakdown derived from user stories)
+#### Back-end developer
+#### QA: acceptance test 
 
 Sarah(40209765): 
  Responsible for README File (Description and Team Member Roles)
