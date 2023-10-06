@@ -1,127 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>ENG-Steins</title>
-  <style>
-    body {
-      color: #0c69f4;
-      font-family: Arial, sans-serif;
-      background-image: url("house.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UniversalHomepage</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+        header {
+            background-color: red;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: inline-block;
+        }
+        .dropdown {
+        display: none;
+        position: absolute;
+        background-color: red;
+        z-index: 1;
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
     }
+        nav li {
+            display: inline;
+            margin: 0 20px;
+            position: relative; /* Add this to create a relative positioning context */
+        }
 
-    nav {
-      position: fixed;
-      top: 60px;
-      left: 0;
-      width: 25%;
-      height: calc(100% - 50px);
-      background-color: white;
-      background-color: #5FCCC3;
-    }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
 
-    .nav-link {
-      display: block;
-      padding: 20px;
-      margin-bottom: 45px;
-      text-decoration: none;
-      color: #0c69f4;
-    }
+        /* Style the dropdown menu */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: red;
+            z-index: 1;
+        }
 
-    .nav-link:hover {
-      background-color: white;
-      color: #0c69f4;
-    }
+        /* Show the dropdown when hovering over the parent li */
+        nav li:hover .dropdown {
+            display: block;
+        }
 
-    .content {
-      margin-left: 25%;
-      padding: 50px;
-    }
+        /* Style the dropdown links */
+        .dropdown a {
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>Eng-Stiens' Real Estate Aid</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Homebuyer</a>
+                        <div class="dropdown">
+                            <a href="#">Search Houses</a>
+                            <a href="#">Search Brokers</a>
+                            <a href="#">Morgage Calulator</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Renter</a>
+                        <div class="dropdown">
+                            <a href="#">Search Houses</a>
+                            <a href="#">Search Brokers</a>
+                        </div></li>
+                    <li><a href="#">Broker</a>
+                        <div class="dropdown">
+                            <a href="#">Search Houses filtered by broker</a>
+                        </div></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    .content h2 {
-      color: #0c69f4;
-    }
+        <section id="featured-properties">
+            <!-- ... (rest of your content) ... -->
+        </section>
 
-    .privacy-disclaimer-popup {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: none;
-      justify-content: center;
-      align-items: center;
-    }
+        <section id="about-us">
+            <!-- ... (rest of your content) ... -->
+        </section>
 
-    .privacy-disclaimer-content {
-      background-color: #fff;
-      padding: 20px;
-      max-width: 500px;
-      text-align: center;
-    }
+        <section id="contact">
+            <!-- ... (rest of your content) ... -->
+        </section>
 
-    .privacy-disclaimer-content h2 {
-      margin-top: 0;
-    }
-
-    .privacy-disclaimer-content p {
-      margin-bottom: 20px;
-    }
-
-    .privacy-disclaimer-close {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: #fff;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .privacy-disclaimer-close:hover {
-      background-color: #3E8E41;
-    }
-  </style>
-</head>
-
-<body>
-  <?php session_start();?>
-  <div content="navigaton">
-    <nav>
-      <a class="nav-link" href="home.php" target=_self>Home</a>
-      <a class="nav-link" href="Findadogcat.php" target=_self>Homebuyer</a>
-      <a class="nav-link" href="DogCare.php" target=_self>Broker</a>
-      <a class="nav-link" href="CatCare.php" target=_self>Search Properties</a>
-      <a class="nav-link" href="ContactUs.php" target=_self>Contact Us</a>
-    </nav>
-  </div>
-
-  <div class="content">
-    <h2>About Us</h2>
-    <p>We are an organization dedicated to helping you find your dream home. </p>
-  </div>
-
-  <div id="privacy-disclaimer-popup" class="privacy-disclaimer-popup">
-    <div class="privacy-disclaimer-content">
-    <h2>Privacy Disclaimer</h2>
-    <p>We take your privacy seriously. This website uses cookies to improve your browsing experience and to personalize the content and advertising we show you. We may also collect personal information from you if you choose to subscribe to our newsletter or contact us through our website.</p>
-    <p>We will never sell or rent your personal information to third parties without your consent, unless required by law. However, we may share your information with trusted third-party service providers who assist us in operating our website or servicing you.</p>
-    <p>By using our website, you consent to our use of cookies and collection of your personal information. If you do not agree with this policy, please do not use our website.</p>
-    <a href="#" class="privacy-disclaimer-close">Close</a>
-  </div>
-</div>
-
-<script>
-var privacyDisclaimerPopup = document.getElementById("privacy-disclaimer-popup");
-var privacyDisclaimerClose = document.getElementsByClassName("privacy-disclaimer-close")[0];
-
-privacyDisclaimerPopup.style.display = "block";
-
-privacyDisclaimerClose.onclick = function() {
-  privacyDisclaimerPopup.style.display = "none";
-}
-</script>
-<?php include 'HeaderFooter.php';?>
-</body>
+        <footer>
+            <p>&copy; 2023 Your Real Estate Company</p>
+        </footer>
+    </body>
 </html>
