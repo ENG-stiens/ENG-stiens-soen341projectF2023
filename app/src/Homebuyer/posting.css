@@ -1,0 +1,52 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.property-details {
+    margin-top: 40px;
+    position: relative;
+}
+
+.property-image {
+    position: relative;
+    text-align: center;
+}
+
+.property-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.banner {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.property-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.realtor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
