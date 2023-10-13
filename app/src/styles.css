@@ -64,3 +64,12 @@ header, h1, body {
     padding: 20px; /* Adjust padding as needed */
     background: #FFF; /* Adjust background color as needed */
 }
+header {
+    position: relative;
+}
+
+#current-time {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

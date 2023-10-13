@@ -13,7 +13,17 @@
 
   <header>
     <h1 class="title">Title</h1>
-
+    <span id="current-time"></span>
+    <script>
+      function updateTime() {
+       const now = new Date();
+       const time = now.toLocaleTimeString();
+       const options = { weekday: 'short', month: 'short', day: 'numeric' };
+       const date = now.toLocaleDateString('en-US', options);
+       document.getElementById('current-time').textContent = `${date} ${time}`;
+   }
+   setInterval(updateTime, 1000);
+ </script>
   </header>
 
   <div class="sidenav">
