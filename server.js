@@ -1,14 +1,14 @@
-const http = require('http');
+const express = require("express");
+const cors = require("cors");
+const app = express();
 
-const hostname = 'localhost';
-const port = 3000;
+app.use(cors());
+app.use(express.json());
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello, World!');
+app.get("/message", (req, res) => {
+    res.json({ message: "Hello from server!" });
 });
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(3000, () => {
+    console.log(`Server is running on port 3000.`);
 });
