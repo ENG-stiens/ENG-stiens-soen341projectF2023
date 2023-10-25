@@ -7,13 +7,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Russo+One&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <title>Home</title>
-
 </head>
 <body>
 
 <header>
   <h1 class="title">Title</h1>
-
 </header>
 
 <div class="sidenav">
@@ -28,6 +26,8 @@
 <div class="content">
   <h1>content area</h1> <!-- add stuff here -->
 </div>
+
+<?php include 'headerfooter.php'; ?>
 
 </body>
 </html>

@@ -7,23 +7,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Russo+One&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <title>Home</title>
-
 </head>
 <body>
 
 <header>
-  <h1 class="title">Time</h1>
-  <span id="current-time"></span>
-  <script>
-       function updateTime() {
-        const now = new Date();
-        const time = now.toLocaleTimeString();
-        const options = { weekday: 'short', month: 'short', day: 'numeric' };
-        const date = now.toLocaleDateString('en-US', options);
-        document.getElementById('current-time').textContent = `${date} ${time}`;
-    }
-    setInterval(updateTime, 1000);
-  </script>
+  <h1 class="title">Title</h1>
 </header>
 
 <div class="sidenav">
@@ -32,14 +20,14 @@
   <a href="appointment.html">Appointment</a>
   <a href="offer.html">Offer</a>
   <a href="bookmarks.html">Bookmarks</a>
-  <a href="mortgage.html">Mortgage Calculator</a>
-  <a href="listings.html">Property Listings</a>
   <a href="">Log Out</a> <!-- CHANGE -->
 </div>
 
 <div class="content">
   <h1>content area</h1> <!-- add stuff here -->
 </div>
+
+<?php include 'headerfooter.php'; ?>
 
 </body>
 </html>
