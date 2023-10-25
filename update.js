@@ -2,10 +2,11 @@ const { error2 } = require('console');
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-    host: 'Kermina Sourial',
-    user:'',
-    password: '',
-    database: '',
+    host: 'localhost',
+    user:'newuser',
+    password: 'Hello123',
+    database: 'realestate',
+    insecureAuth: true
 });
 
 connection.connect((error2) => {
