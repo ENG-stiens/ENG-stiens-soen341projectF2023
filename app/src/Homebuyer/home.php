@@ -15,7 +15,7 @@
 </header>
 
 <div class="sidenav">
-  <a href="home.html">Home</a>
+  <a href="home.php">Home</a>
   <a href="profile.html">Profile</a>
   <a href="appointment.html">Appointment</a>
   <a href="offer.html">Offer</a>
