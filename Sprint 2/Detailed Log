@@ -11,3 +11,31 @@ October 24th 2023 ~ 5 hours
 
 October 25th 2023 ~ 2 hours 
 - wrote 2 acceptance tests for homebuyer and property renter 
+
+
+**Eden**
+October 4 2023 ~ 1 hour
+- updated README file
+- research on setting up CI/CD pipeline 
+
+October 11 2023 ~ 2 hours
+- initial set up of CI/CD pipeline 
+
+October 17 2023 ~ 3 hours 
+- updated CI/CD pipeline 
+- updated dependencies 
+- implemented backend of search for properties functionality 
+- implemented backend of request for visit functionality 
+
+October 24 2023 ~ 1 hour
+- updated CI/CD pipeline 
+- updated configuration for Express.js
+- implemented backend of search for properties functionality 
+- implemented backend of request for visit functionality 
+
+October 25 2023 ~ 3 hours
+- updated CI/CD pipeline 
+- commit + pushed backend of search for properties functionality 
+- commit + pushed backend of request for visit functionality 
+- tested both functionalities 
+
