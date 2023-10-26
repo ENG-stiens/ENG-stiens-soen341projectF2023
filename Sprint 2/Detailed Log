@@ -53,3 +53,29 @@ October 25 2023 ~ 3 hours
 - installed php/ local host 
 
 
+**Kermina**
+
+October 6 2023 ~ 1 hour
+- Did some research on which database software to use that is more suitable for our project
+
+October 10 2023 ~ 2 hours
+- Downloaded MySQL workbench
+- Consulted online tutorials to learn and understand how MySQl works
+- Created a database for listings for sale
+
+October 13 2023 ~ 1 hour
+- Downloaded Visual Studio Code
+- Added a database for rentals listings on MySQL
+- Added a database for brokers on MySql
+
+October 18 2023 ~ 2 hours
+- Downloaded Node.js
+- Established a connection between MySQL and Visual Studio
+
+October 24 2023 ~ 2 hours
+- Coded CRUD operations on brokers
+- Modified some things in the database
+
+October 5, 10, 16, 17, 22 ~ 2 hours
+- Fill meeting minutes
+
