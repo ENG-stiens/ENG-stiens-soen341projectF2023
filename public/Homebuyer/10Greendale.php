@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="../styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Russo+One&display=swap"
-            rel="stylesheet">
         <meta charset="UTF-8">
-        <title>10 Greendale</title>
         <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -63,35 +56,11 @@
             text-align: center;
         }
     </style>
+    <?php
+include 'header.php';
+include 'sidenav.php';
+?>
     </head>
-    <body>
-
-        <header>
-            <h1 class="title">Title</h1>
-            <span id="current-time"></span>
-            <script>
-       function updateTime() {
-        const now = new Date();
-        const time = now.toLocaleTimeString();
-        const options = { weekday: 'short', month: 'short', day: 'numeric' };
-        const date = now.toLocaleDateString('en-US', options);
-        document.getElementById('current-time').textContent = `${date} ${time}`;
-    }
-    setInterval(updateTime, 1000);
-  </script>
-        </header>
-
-        <div class="sidenav">
-            <a href="home.html">Home</a>
-            <a href="profile.html">Profile</a>
-            <a href="appointment.html">Appointment</a>
-            <a href="offer.html">Offer</a>
-            <a href="bookmarks.html">Bookmarks</a>
-            <a href="mortgage.html">Mortgage Calculator</a>
-            <a href="listings.html">Property Listings</a>
-            <a href="">Log Out</a> <!-- CHANGE -->
-        </div>
-
         <div class="content">
             <body>
                 <div class="property-details">
@@ -117,6 +86,8 @@
                 </div>
             </body>
         </div>
-
+        <?php
+include 'footer.php';
+?>
     </body>
 </html>
