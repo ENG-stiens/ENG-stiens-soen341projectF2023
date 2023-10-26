@@ -14,39 +14,73 @@ include 'header.php';
 include 'sidenav.php';
 ?>
     <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #f4f4f4;
-      }
-  
-      h1 {
-        text-align: center;
-        margin-top: 40px;
-        color: #333;
-      }
-  
-      .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 40px;
-      }
-  
-      .property {
-        margin: 20px;
-        text-align: center;
-        color: #333;
-        width: 30%;
-      }
-  
-      .property img {
-        width: 100%;
-        max-height: 200px;
-        object-fit: cover;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-      }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.property {
+  margin: 20px;
+  text-align: center;
+  color: #333;
+  width: 30%;
+}
+
+.property img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.sidenav {
+  width: 250px; /* Adjusted the width to match the margin-left in the .content class */
+  height: 100vh;
+  position: fixed; /* Changed to fixed for a sticky sidebar */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background: #2E2C2F;
+}
+
+.sidenav a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  color: #EAEAEA;
+}
+
+.sidenav a:hover {
+  color: #BACDB0;
+}
+
     </style>
   </head>
  
