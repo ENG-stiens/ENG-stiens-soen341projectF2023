@@ -47,18 +47,14 @@
 
 <div class="wrapper">
   <div class="sidenav">
-        <a href="home.html">Home</a>
-        <a href="profile.html">Profile</a>
-        <a href="appointment.html">Appointment</a>
-        <a href="offer.html">Offer</a>
-        <a href="bookmarks.html">Bookmarks</a>
-        <a href="mortgage.html">Mortgage Calculator</a>
-        <a href="listings.html">Property Listings</a>
+        <a href="home.php">Home</a>
+        <a href="profile.php">Profile</a>
+        <a href="appointment.php">Appointment</a>
+        <a href="offer.php">Offer</a>
+        <a href="bookmarks.php">Bookmarks</a>
+        <a href="mortgage.php">Mortgage Calculator</a>
+        <a href="listings.php">Property Listings</a>
         <a href="">Log Out</a>
-  </div>
-
-  <div class="content">
-    <!-- Add your main content here -->
   </div>
 </div>
 
