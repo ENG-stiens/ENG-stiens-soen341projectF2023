@@ -10,7 +10,6 @@ app.use(express.urlencoded({ extended: false }));
 
 const port = 3000;
 
-
 // create connection to database
 // enter your connection information
 const connection = mysql.createConnection({
