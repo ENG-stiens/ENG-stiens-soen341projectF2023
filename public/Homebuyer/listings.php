@@ -9,6 +9,10 @@
       rel="stylesheet">
     <meta charset="UTF-8">
     <title>Properties for Sale</title>
+    <?php
+include 'header.php';
+include 'sidenav.php';
+?>
     <style>
       body {
         font-family: 'Poppins', sans-serif;
@@ -45,9 +49,7 @@
       }
     </style>
   </head>
-  <?php
-include 'header.php';
-?>
+ 
   <body>
     <div class="sidenav">
       <a href="home.html">Home</a>
