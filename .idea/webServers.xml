@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="72fbb37b-4fb9-4554-95e7-cf1ef5c2e810" name="test" url="http://localhost">
+        <fileTransfer mountedRoot="C:\Users\patel\Documents\soen341\ENG-stiens-soen341projectF2023" accessType="MOUNT" port="0" />
+      </webServer>
+      <webServer id="1db85756-160d-4984-a493-995c37579f59" name="tesi" url="http://localhost">
+        <fileTransfer mountedRoot="C:\Users\patel\Documents\soen341\ENG-stiens-soen341projectF2023" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
