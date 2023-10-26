@@ -11,7 +11,7 @@ include 'sidenav.php';
 ?>
 <body>
 
-    <div class="container">
+    <div class="content">
         <h1>Submit Your Offer</h1>
         <p>Please fill out the form below to submit your offer for the desired property.</p>
 

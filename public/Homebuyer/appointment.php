@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+include 'header.php';
+?>
 <head>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Russo+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Appointment</title>
 </head>
-<?php
-include 'header.php';
+
+<?php 
 include 'sidenav.php';
 ?>
 <body>

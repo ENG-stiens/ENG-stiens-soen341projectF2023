@@ -4,7 +4,7 @@
 .content {
             flex: 1;
             padding: 20px;
-            margin-left: 250px; /* Set the same width as the sidenav to create space */
+            margin-left: 300px; 
         }
 
         .wrapper {
@@ -31,9 +31,17 @@
             color: #EAEAEA;
         }
 
-        .sidenav a:hover {
-            color: #BACDB0;
-        }
+        .sidenav {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  color: #EAEAEA;
+}
+
+.sidenav a:hover {
+  color: #BACDB0;
+} */
         </style>
 <body>
 

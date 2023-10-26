@@ -46,14 +46,9 @@ h1 {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-
-
-
-    </style>
+</style>
   </head>
- 
   <body>
-
     <div class="content">
       <h1>Properties for Sale</h1>
       <div class="gallery">
