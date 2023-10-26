@@ -3,16 +3,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
-    $house = $_POST['house'];
-    $date = $_POST['date'];
-    $time = $_POST['time'];
-    $message = $_POST['message'];
+    $property = $_POST['address'];
+    $offer = $_POST['offer'];
 
-    // Write data to a text file with the user's first name
-    $file_name = $name . "_appointment.txt";
-    $file_content = "Name: $name\nEmail: $email\nPhone: $phone\nHouse to Visit: $house\nPreferred Date: $date\nPreferred Time: $time\nMessage: $message\n";
+    $file_name = $name . "_offer.txt";
+    $file_content = "Name: $name\nEmail: $email\nPhone Number: $phone\nProperty Address: $property\nOffer: $offer\n";
     
-    // Open the file in write mode
     $file = fopen($file_name, "w");
     fwrite($file, $file_content);
     fclose($file);
@@ -36,7 +32,7 @@ include 'sidenav.php';
         <h1>Submit Your Offer</h1>
         <p>Please fill out the form below to submit your offer for the desired property.</p>
 
-        <form action="/submit_offer" method="post">
+        <form action="" method="post">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
 
