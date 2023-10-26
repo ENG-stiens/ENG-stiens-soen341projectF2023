@@ -9,6 +9,10 @@
       rel="stylesheet">
     <meta charset="UTF-8">
     <title>Properties for Sale</title>
+    <?php
+include 'header.php';
+include 'sidenav.php';
+?>
     <style>
       body {
         font-family: 'Poppins', sans-serif;
@@ -45,45 +49,33 @@
       }
     </style>
   </head>
-  <?php
-include 'header.php';
-?>
+ 
   <body>
-    <div class="sidenav">
-      <a href="home.html">Home</a>
-      <a href="profile.html">Profile</a>
-      <a href="appointment.html">Appointment</a>
-      <a href="offer.html">Offer</a>
-      <a href="bookmarks.html">Bookmarks</a>
-      <a href="mortgage.html">Mortgage Calculator</a>
-      <a href="listings.html">Property Listings</a>
-      <a href="">Log Out</a> <!-- CHANGE -->
-    </div>
 
     <div class="content">
       <h1>Properties for Sale</h1>
       <div class="gallery">
         <div class="property">
-          <a href="10Greendale.html"><img src="10Greendale.jpg" alt="10
+          <a href="10Greendale.php"><img src="10Greendale.jpg" alt="10
               Greendale"></a>
           <p>10 Greendale</p>
         </div>
         <div class="property">
-          <a href="5784Montana.html"><img src="5784Montana.jpeg" alt="5784
+          <a href="5784Montana.php"><img src="5784Montana.jpeg" alt="5784
               Montana"></a>
           <p>5784 Montana</p>
         </div>
         <div class="property">
-          <a href="770Parkway.html"><img src="770Parkway.jpg" alt="770 Parkway"></a>
+          <a href="770Parkway.php"><img src="770Parkway.jpg" alt="770 Parkway"></a>
           <p>770 Parkway</p>
         </div>
         <div class="property">
-          <a href="999Casablanca.html"><img src="999Casablanca.jpg" alt="999
+          <a href="999Casablanca.php"><img src="999Casablanca.jpg" alt="999
               Casablanca"></a>
           <p>999 Casablanca</p>
         </div>
         <div class="property">
-          <a href="67Grand.html"><img src="67Grand.jpg" alt="67 Grand"></a>
+          <a href="67Grand.php"><img src="67Grand.jpg" alt="67 Grand"></a>
           <p>67 Grand</p>
         </div>
       </div>

@@ -8,24 +8,11 @@
     <meta charset="UTF-8">
     <title>Appointment</title>
 </head>
+<?php
+include 'header.php';
+include 'sidenav.php';
+?>
 <body>
-
-    <header>
-        <h1 class="title">Title</h1>
-
-    </header>
-
-    <div class="sidenav">
-        <a href="home.html">Home</a>
-        <a href="profile.html">Profile</a>
-        <a href="appointment.html">Appointment</a>
-        <a href="offer.html">Offer</a>
-        <a href="bookmarks.html">Bookmarks</a>
-        <a href="mortgage.html">Mortgage Calculator</a>
-        <a href="listings.html">Property Listings</a>
-        <a href="">Log Out</a> <!-- CHANGE -->
-      </div>
-
     <div class="content">
         <h1>Book an Appointment</h1> <form action="/submit_appointment" method="post">
             <label for="name">Your Name:</label><br>
@@ -56,6 +43,8 @@
             <input type="submit" value="Book Appointment">
         </form>
     </div>
-
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

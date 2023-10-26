@@ -8,27 +8,15 @@
     <meta charset="UTF-8">
     <title>Profile</title>
 </head>
-<body>
-
-
-    <header>
-        <h1 class="title">Title</h1>
-    </header>
-
-    <div class="sidenav">
-        <a href="home.html">Home</a>
-        <a href="profile.html">Profile</a>
-        <a href="appointment.html">Appointment</a>
-        <a href="offer.html">Offer</a>
-        <a href="bookmarks.html">Bookmarks</a>
-        <a href="mortgage.html">Mortgage Calculator</a>
-        <a href="listings.html">Property Listings</a>
-        <a href="">Log Out</a> <!-- CHANGE -->
-      </div>
-
+<?php
+include 'header.php';
+?>
     <div class="content">
         <h1>content area</h1> <!-- add stuff here -->
     </div>
-
+    <?php
+include 'sidenav.php';
+include 'footer.php';
+?>
 </body>
 </html>
