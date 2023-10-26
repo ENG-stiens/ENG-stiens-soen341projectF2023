@@ -5,7 +5,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Russo+One&display=swap"
       rel="stylesheet">
     <meta charset="UTF-8">
     <title>Properties for Sale</title>
@@ -48,7 +47,7 @@ h1 {
   border-radius: 5px;
 }
 
-.content {
+/* .content {
   flex: 1;
   padding: 20px;
 }
@@ -79,7 +78,7 @@ h1 {
 
 .sidenav a:hover {
   color: #BACDB0;
-}
+} */
 
     </style>
   </head>
