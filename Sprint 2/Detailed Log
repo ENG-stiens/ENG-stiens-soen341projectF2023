@@ -25,37 +25,49 @@ October 25 2023 ~ 3 hours
 - tested both functionalities
 
 **Sarah**
-October 10 2023 ~ 1 hour
-- created a skeleton of home page
+October 10, 2023 ~ 1 hour
+- Created a skeleton of the home page.
 
-October 13 2023 ~ 2 hr
-- made form for homebuyer appointments
-- added time to the header (this later got removed)
-- Added page to display avalible properties
-- put images for properties 
-- added individual property pages that contains unique infomration (this will be pulled from backend)
+October 13, 2023 ~ 2 hours
+- Developed a form for homebuyer appointments.
+- Added a timestamp to the header (which was later removed).
+- Implemented a page to display available properties.
+- Incorporated images for the properties.
+- Established individual property pages with unique information pulled from the backend.
 
-October 18 2023 ~ 3 hr
-- created headerfooter.html, this was suposed to make the whole website cohesive but then I realised using
-.php would be better to call the files andstore login information.
-- changed all filed to .php
-- we had a miscommunication between vanisha, sasha and I on the headder style so I reimplemented the new version that sasha built.
+October 18, 2023 ~ 3 hours
+- Created headerfooter.html but decided to switch to .php for better file management and to store login information securely.
+- Modified all files to .php.
+- Re-implemented the new version of the header style developed by Sasha due to a miscommunication.
 
-October 25 2023 ~ 5hr
-- Set up local terminal for php
-- Decided that having a header.php, footer.php and sidenav.php would be easier to implement
-- Made the login button into a popup to request credentials
-- Linked the appointment forms in homebuyer to store the info in a txt file until back end is merged.
-- Linked the offer forms in homebuyer to store the info in a txt file until back end is merged.
-- Eden asked me to move my stuff into the puclic folder to help with the pipeline and back end so I reconfigured.
+October 25, 2023 ~ 5 hours
+- Set up a local terminal for PHP.
+- Organized the website structure by using header.php, footer.php, and sidenav.php.
+- Converted the login button into a popup for credential requests.
+- Linked the appointment and offer forms in the homebuyer section to store information in a text file until the backend is integrated.
+- Moved files into the public folder as requested by Eden to streamline the pipeline and backend processes.
 
-Ocotber 26 2023 ~ 4hr
-- To restric acess I edited in home.php. The nav bar was edited to have you select what type of user expirence you want by clicking either homebuyer. renter or broker.
-  clicking any of them takes you to their own respective homepages.
-- I made each type of user their own home page that allows them to acess specific functions.
-- updated header.php, footer.php,sidenav.php
-- Had lots of trouble with layout of sidenav.php to display content
-- Made sure all webpages connect within the folders
+October 26, 2023 ~ 4 hours
+- Implemented access restrictions in home.php.
+- Revamped the navigation bar to allow users to select between three different experiences: homebuyer, renter, or broker.
+- Created distinct home pages for each user type, allowing specific functions to be accessed.
+- Updated header.php, footer.php, and sidenav.php.
+- Faced layout challenges with sidenav.php to display content properly.
+- Ensured that all web pages are interconnected within the folders.
+
+**Vanisha**
+
+
+**Oleksandra**
+October 11 2023 ~ 1.5 hours
+-initial set up of the coding environment in VS code
+
+October 12 2023 ~ 2 hours
+- coded home page template
+
+October 25 2023 ~ 3 hours
+- wrote 2 accceptance tests ( system administrator and broker)
+- installed php/ local host 
 
 **Julie**
 October 22nd 2023 ~ 3 hours
@@ -73,23 +85,7 @@ October 25th 2023 ~ 2 hours
 - wrote 2 acceptance tests for homebuyer and property renter 
 - pushed/commited the CRUD operations on properties on the repository 
 
-**Vanisha**
-
-**Oleksandra**
-
-October 11 2023 ~ 1.5 hours
--initial set up of the coding environment in VS code
-
-October 12 2023 ~ 2 hours
-- coded home page template
-
-October 25 2023 ~ 3 hours
-- wrote 2 accceptance tests ( system administrator and broker)
-- installed php/ local host 
-
-
 **Kermina**
-
 October 6 2023 ~ 1 hour
 - Did some research on which database software to use that is more suitable for our project
 
