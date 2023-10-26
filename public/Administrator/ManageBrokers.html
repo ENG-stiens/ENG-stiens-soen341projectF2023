@@ -79,7 +79,14 @@
     </form>
 </div>
 
-<!-- update broker form -->
+
+<!-- CRUD FORM
+     -not sure how to do the CRUD operation. There are three submit buttons on this form soo I guess you need to create
+     if else statements to make the form to the correct manipulation on the database (javascript code)
+     - watch out for action="/CRUD" method="post" because this tells the form what operation/action it should do. Since
+     the form has three different options it might cause error.
+     - need to look up how to perform different backend data manipulation/operation from a single HTML form
+ -->
 <div class="broker_CRUD_form">
     <form id="broker-form" action="/updateBroker" method="post">  <!-- check if good -->
 
@@ -105,6 +112,7 @@
             </div>
         </div>
 
+
         <div class="email-phone">
             <div class="email-input">
                 <label for="email">Email:</label><br>
@@ -117,9 +125,11 @@
             </div>
         </div>
 
+
         <br>
         <br>
 
+        <!-- will need to modify the content here to create if else statements? -->
         <div class="button-container">
             <button type="submit" class="update-button" name="action" value="update" >UPDATE</button>
         </div>
@@ -128,9 +138,11 @@
 </div>
 
 
-<!-- add broker form -->
+
 <div class="broker_CRUD_form">
     <form id="broker-form" action="/createBroker" method="post">  <!-- check if good -->
+
+
         <div class="name-lastname">
             <div class="name-input">
                 <label for="name">Name:</label>
@@ -147,6 +159,7 @@
             </div>
         </div>
 
+
         <div class="email-phone">
             <div class="email-input">
                 <label for="email">Email:</label><br>
@@ -159,25 +172,32 @@
             </div>
         </div>
 
+
         <br>
         <br>
 
         <!-- will need to modify the content here to create if else statements? -->
         <div class="button-container">
+
             <button type="submit" class="center-button add-broker" name="action" value="add">Add Broker</button>
+
         </div>
+
     </form>
 </div>
 
 
-<!-- delete broker form -->
+
+
+
 <div class="broker_CRUD_form">
-    <form id="broker-form" action="/deleteBroker" method="post">  <!-- check if good -->
+    <form id="broker-form" action="/deleteBrokerByName" method="post">  <!-- check if good -->
 
         <label for="id-broker">ID:</label>
         <br>
-        <input type="text" id="id-broker" name="idBroker">
+        <input type="text" id="id-broker" name="id-broker">
         <br>
+
 
         <div class="name-lastname">
             <div class="name-input">
@@ -195,6 +215,7 @@
             </div>
         </div>
 
+
         <div class="email-phone">
             <div class="email-input">
                 <label for="email">Email:</label><br>
@@ -207,14 +228,45 @@
             </div>
         </div>
 
+
         <br>
         <br>
 
+        <!-- will need to modify the content here to create if else statements? -->
         <div class="button-container">
             <button type="submit" class="update-button" name="action" value="delete">DELETE</button>
         </div>
+
     </form>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

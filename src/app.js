@@ -2,7 +2,6 @@
 const mysql = require("mysql");
 const express = require("express");
 const path = require("path");
-
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -41,12 +40,17 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 // Serve static files from the 'public' directory
 //app.use(express.static(path.join(__dirname, 'public')));
 
-
 // Display ManageBrokers.html at http://localhost:3000/managebrokers
+// app.get('/managebrokers', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../public/Administrator/Managebrokers.html'));
+// });
+
+
 app.get('/managebrokers', (req, res) => {
     const filePath = path.join(__dirname, '..', 'public','Administrator', 'ManageBrokers.html');
     res.sendFile(filePath);
 });
+
 
 
 // get request to search for brokers in the database
@@ -72,59 +76,30 @@ app.get('/searchBrokers', (req, res) => {
 });
 
 
-// the backend CRUD operarions ==================================================
-//------------------------------------------UPDATE---------------------------------------------------------------------
-// create post to update broker in the database
-app.post('/updateBroker', (req, res) => {
-    const { idbroker_info, name, last_name, email, phone } = req.body;
+// code for the backend CRUD operarions....................
+// CRUD Operations
 
-    updateBroker(idbroker_info, name, last_name, email, phone)
-        .then(() => {
-            res.status(200).send('Broker updated');
-        })
-        .catch((error) => {
-            console.error(error);
-            res.status(500).send('Error.');
-        });
-});
-
-// function updtates the database
-const updateBroker = (idbroker_info, name, last_name, email, phone) => {
-    return new Promise((resolve, reject) => {
-        let query = 'UPDATE broker_info SET name = ?, last_name = ?, email = ?, phone = ? WHERE idbroker_info = ?';
-        connection.query(query, [name, last_name, email, phone, idbroker_info], (err, results) => {
-            if (err) {
-                console.error('Error', err);
-                reject(err);
-            } else {
-                resolve(results);
-            }
-        });
-    });
-};
-
-//------------------------------------------ADD---------------------------------------------------------------------
-// create post to add broker
+// POST add new broker
 app.post('/createBroker', (req, res) => {
     const { name, last_name, email, phone } = req.body;
 
     createBroker(name, last_name, email, phone)
         .then(() => {
-            res.status(200).send('Broker created');
+            res.status(200).send('Broker created successfully.');
         })
         .catch((error) => {
             console.error(error);
-            res.status(500).send('Error');
+            res.status(500).send('Error creating broker.');
         });
 });
 
-// function to create a broker in the database
+// Function to create a broker in the database
 const createBroker = (name, last_name, email, phone) => {
     return new Promise((resolve, reject) => {
         let query = 'INSERT INTO broker_info (name, last_name, email, phone) VALUES (?, ?, ?, ?)';
         connection.query(query, [name, last_name, email, phone], (err, results) => {
             if (err) {
-                console.error('Error', err);
+                console.error('Error creating broker:', err);
                 reject(err);
             } else {
                 resolve(results);
@@ -133,27 +108,81 @@ const createBroker = (name, last_name, email, phone) => {
     });
 };
 
-//------------------------------------------ DELETE---------------------------------------------------------------------
-// post to delete broker by ID
-app.post('/deleteBroker', (req, res) => {
-    const { idBroker } = req.body; // Updated variable name
+// Handle "Update Broker" action
+app.post('/updateBroker', (req, res) => {
+    const { old_name, new_name, last_name, email, phone } = req.body;
 
-    deleteBroker(idBroker)
+    updateBrokerByName(old_name, new_name, last_name, email, phone)
         .then(() => {
-            res.status(200).send('Broker deleted');
+            res.status(200).send('Broker updated successfully.');
         })
         .catch((error) => {
             console.error(error);
-            res.status(500).send('Error');
+            res.status(500).send('Error updating broker.');
         });
 });
 
 
-// function to delete a broker by ID from database
+const updateBrokerByName = (old_name, new_name, last_name, email, phone) => {
+    return new Promise((resolve, reject) => {
+        let query = 'UPDATE broker_info SET name=?, last_name=?, email=?, phone=? WHERE name=?';
+        connection.query(query, [new_name, last_name, email, phone, old_name], (err, results) => {
+            if (err) {
+                console.error('Error updating broker:', err);
+                reject(err);
+            } else {
+                resolve(results);
+            }
+        });
+    });
+};
+
+app.post('/deleteBroker', (req, res) => {
+    const { id } = req.body;
+
+    deleteBroker(id)
+        .then(() => {
+            res.status(200).send('Broker deleted successfully.');
+        })
+        .catch((error) => {
+            console.error(error);
+            res.status(500).send('Error deleting broker.');
+        });
+});
+
+// delete a broker from the database
 const deleteBroker = (id) => {
     return new Promise((resolve, reject) => {
         let query = 'DELETE FROM broker_info WHERE idbroker_info = ?';
         connection.query(query, [id], (err, results) => {
+            if (err) {
+                console.error('Error deleting broker:', err);
+                reject(err);
+            } else {
+                resolve(results);
+            }
+        });
+    });
+};
+
+app.post('/deleteBrokerByName', (req, res) => {
+    const { name } = req.body;
+
+    deleteBrokerByName(name)
+        .then(() => {
+            res.status(200).send('Broker deleted successfully.');
+        })
+        .catch((error) => {
+            console.error(error);
+            res.status(500).send('Error deleting broker.');
+        });
+});
+
+// Function to delete a broker by name from the database
+const deleteBrokerByName = (name) => {
+    return new Promise((resolve, reject) => {
+        let query = 'DELETE FROM broker_info WHERE name = ?';
+        connection.query(query, [name], (err, results) => {
             if (err) {
                 console.error('Error deleting broker:', err);
                 reject(err);
