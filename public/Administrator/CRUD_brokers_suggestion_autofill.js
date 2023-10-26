@@ -1,4 +1,3 @@
-
 // -------- code for searching brokers and auto-filling the form from values read from the database ----------------
 // attributes
 const searchInput = document.getElementById('search');
@@ -74,5 +73,3 @@ document.addEventListener('click', (event) => {
 });
 
 // ---------------------------------------------------------------------------------------------------------------------
-
-// Add CRUD javascript here
