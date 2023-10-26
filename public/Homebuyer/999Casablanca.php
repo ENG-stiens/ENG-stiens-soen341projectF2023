@@ -63,10 +63,13 @@ include 'sidenav.php';
     </head>
     <body>
         <div class="content">
+        <a href="listings.php" style="text-decoration: none; color: #333; display: inline-block; margin-bottom: 20px;">
+        &larr; Property Listings
+    </a>
             <body>
                 <div class="property-details">
                     <div class="property-image">
-                        <img src="10Greendale.jpg" alt="10 Greendale">
+                        <img src="999Casablanca.jpg" alt="999 Casablanca">
                         <div class="banner">
                             <p>Realtor: ABC Realty</p>
                         </div>

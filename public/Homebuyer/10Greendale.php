@@ -62,6 +62,9 @@ include 'sidenav.php';
 ?>
     </head>
         <div class="content">
+        <a href="listings.php" style="text-decoration: none; color: #333; display: inline-block; margin-bottom: 20px;">
+        &larr; Property Listings
+    </a>
             <body>
                 <div class="property-details">
                     <div class="property-image">
