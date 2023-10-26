@@ -138,12 +138,7 @@ footer {
       <nav>
                     <ul>
                         <li>
-                         <a href="#">Homebuyer</a>
-                         <div class="dropdown">
-                                <a href="#">Search Houses</a>
-                                <a href="#">Search Brokers</a>
-                                <a href="#">Morgage Calulator</a>
-                            </div>
+                         <a href="homebuyerhome.php">Homebuyer</a>
                         </li>
                       <li><a href="#">Renter</a>
                             <div class="dropdown">
