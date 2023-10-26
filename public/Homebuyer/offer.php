@@ -1,3 +1,24 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $house = $_POST['house'];
+    $date = $_POST['date'];
+    $time = $_POST['time'];
+    $message = $_POST['message'];
+
+    // Write data to a text file with the user's first name
+    $file_name = $name . "_appointment.txt";
+    $file_content = "Name: $name\nEmail: $email\nPhone: $phone\nHouse to Visit: $house\nPreferred Date: $date\nPreferred Time: $time\nMessage: $message\n";
+    
+    // Open the file in write mode
+    $file = fopen($file_name, "w");
+    fwrite($file, $file_content);
+    fclose($file);
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
