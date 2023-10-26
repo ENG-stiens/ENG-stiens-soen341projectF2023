@@ -49,6 +49,10 @@ h1 {
 </style>
   </head>
   <body>
+     <div class="content">
+    <form action="search.php" method="GET">
+    <input type="text" name="query" placeholder="Search...">
+    <input type="submit" value="Search">
     <div class="content">
       <h1>Properties for Sale</h1>
       <div class="gallery">
