@@ -1,68 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php
+    include 'header.php';
+    ?>
     <meta charset="UTF-8">
     <title>Manage Brokers</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Russo+One&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-<!----------------------------------------------------------Universal Template ----------------------------------------->
-<header>
-    <button class="login-button">Log in</button>
-
-    <div class="title-container">
-        <h1>
-            <img src="house.png" alt="Logo">
-            Eng-Stiens' Real Estate Aid
-
-        </h1>
-
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Homebuyer</a>
-                    <div class="dropdown">
-                        <a href="#">Search Houses</a>
-                        <a href="#">Search Brokers</a>
-                        <a href="#">Morgage Calulator</a>
-                    </div>
-                </li>
-                <li><a href="#">Renter</a>
-                    <div class="dropdown">
-                        <a href="#">Search Houses</a>
-                        <a href="#">Search Brokers</a>
-                    </div></li>
-                <li><a href="#">Broker</a>
-                    <div class="dropdown">
-                        <a href="#">Search Houses filtered by broker</a>
-                    </div></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </div>
-
-</header>
-
-<section id="featured-properties">
-    <!-- ... content ... -->
-
-</section>
-
-<section id="about-us">
-    <!-- ... content ... -->
-</section>
-
-<section id="contact">
-    <!-- ... content ... -->
-</section>
-<!--------------------------------------------------------------------------------------------------------------------->
-
 
 <!-----------------------------------------------------HTML for Manage Brokers Page ----------------------------------->
 
@@ -71,13 +16,13 @@
 </div>
 
 
-<!-- search bar -->
+<!-- search bar
 <div class="search-container">
     <form action="/searchBrokers" method="get" class="searchBar_brokers">
         <input type="text" name="search" id="search" placeholder="Search Brokers">
         <div id="search-suggestions" class="suggestions"></div>
     </form>
-</div>
+</div> -->
 
 
 <!-- CRUD FORM
@@ -87,14 +32,14 @@
      the form has three different options it might cause error.
      - need to look up how to perform different backend data manipulation/operation from a single HTML form
  -->
-<div class="broker_CRUD_form">
+<div class = "content">
+ <div class="broker_CRUD_form">
     <form id="broker-form" action="/updateBroker" method="post">  <!-- check if good -->
 
         <label for="idbroker_info">ID:</label>
         <br>
         <input type="text" id="idbroker_info" name="idbroker_info">
         <br>
-
 
         <div class="name-lastname">
             <div class="name-input">
@@ -239,6 +184,11 @@
 
     </form>
 </div>
+</div>
+<?php include 'footer.php';
+?>
+</body>
+</html>
 
 
 
