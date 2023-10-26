@@ -1,20 +1,38 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $house = $_POST['house'];
+    $date = $_POST['date'];
+    $time = $_POST['time'];
+    $message = $_POST['message'];
+
+    $file_name = $name . "_appointment.txt";
+    $file_content = "Name: $name\nEmail: $email\nPhone: $phone\nHouse to Visit: $house\nPreferred Date: $date\nPreferred Time: $time\nMessage: $message\n";
+    
+    $file = fopen($file_name, "w");
+    fwrite($file, $file_content);
+    fclose($file);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
+<?php
+include 'header.php';
+?>
 <head>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Russo+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Appointment</title>
 </head>
-<?php
-include 'header.php';
+
+<?php 
 include 'sidenav.php';
 ?>
 <body>
     <div class="content">
-        <h1>Book an Appointment</h1> <form action="/submit_appointment" method="post">
+        <h1>Book an Appointment</h1> 
+        <form action="" method="post">
             <label for="name">Your Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
             
@@ -25,11 +43,13 @@ include 'sidenav.php';
             <input type="tel" id="phone" name="phone" required><br><br>
             
             <label for="house">House to Visit:</label><br>
-        <select id="house" name="house">
-            <option value="house1">House 1</option>
-            <option value="house2">House 2</option>
-            <option value="house3">House 3</option>
-        </select><br><br>
+            <select id="house" name="house">
+                <option value="10 Greendale">10 Greendale</option>
+                <option value="67 Grand">67 Grand</option>
+                <option value="770 Parkway">770 Parkway</option>
+                <option value="999 Casablanca">999 Casablanca</option>
+                <option value="5784 Montana">5784 Montana</option>
+            </select><br><br>
     
             <label for="date">Preferred Date:</label><br>
             <input type="date" id="date" name="date" required><br><br>

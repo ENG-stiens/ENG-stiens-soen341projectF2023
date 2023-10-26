@@ -5,7 +5,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Russo+One&display=swap"
       rel="stylesheet">
     <meta charset="UTF-8">
     <title>Properties for Sale</title>
@@ -14,44 +13,42 @@ include 'header.php';
 include 'sidenav.php';
 ?>
     <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #f4f4f4;
-      }
-  
-      h1 {
-        text-align: center;
-        margin-top: 40px;
-        color: #333;
-      }
-  
-      .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 40px;
-      }
-  
-      .property {
-        margin: 20px;
-        text-align: center;
-        color: #333;
-        width: 30%;
-      }
-  
-      .property img {
-        width: 100%;
-        max-height: 200px;
-        object-fit: cover;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-      }
-    </style>
-  </head>
- 
-  <body>
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+}
 
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.property {
+  margin: 20px;
+  text-align: center;
+  color: #333;
+  width: 30%;
+}
+
+.property img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+</style>
+  </head>
+  <body>
     <div class="content">
       <h1>Properties for Sale</h1>
       <div class="gallery">

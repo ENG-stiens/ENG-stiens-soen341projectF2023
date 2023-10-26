@@ -15,25 +15,21 @@
         align-items: center;
     }
 
-  
-.overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+    }
 
+    .overlay h1 {
+        margin: 0;
+        padding: 20px 0;
+        font-size: 3em;
+        text-align: center;
+    }
 
-.overlay h1 {
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    font-size: 3em;
-    text-align: center;
-}
-.start-journey-button {
+    .start-journey-button {
         background-color: #4CAF50;
         border: none;
         color: white;
@@ -51,7 +47,6 @@
     .start-journey-button:hover {
         background-color: #45a049;
     }
-
 </style>
 
 <style>
@@ -68,10 +63,9 @@ include 'header.php';
 
 <div class="background">
     <div class="overlay">
-        <h1>Welcome Homebuyer</h1>  
-        <a href="listings.php" class="start-journey-button">Start your journey</a>  
-</div></div>
-
+        <h1>Welcome Renter</h1>
+        <a href="home.php" class="start-journey-button">Start your journey</a>    </div>
+</div>
 
 <?php
 include 'footer.php';
