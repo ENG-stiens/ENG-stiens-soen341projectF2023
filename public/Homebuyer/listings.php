@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -46,13 +45,10 @@
       }
     </style>
   </head>
+  <?php
+include 'header.php';
+?>
   <body>
-
-    <header>
-      <h1 class="title">Title</h1>
-
-    </header>
-
     <div class="sidenav">
       <a href="home.html">Home</a>
       <a href="profile.html">Profile</a>
@@ -92,6 +88,9 @@
         </div>
       </div>
 
+      <?php
+include 'footer.php';
+?>
 
     </body>
   </html>
