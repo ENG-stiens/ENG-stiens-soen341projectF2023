@@ -76,9 +76,6 @@ const deleteBroker = (id) => {
     });
 };
 
-module.exports = {
-    createBroker,
-    read
-}
+
 
 
