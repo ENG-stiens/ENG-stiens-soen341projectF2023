@@ -140,11 +140,8 @@ footer {
                         <li>
                          <a href="homebuyerhome.php">Homebuyer</a>
                         </li>
-                      <li><a href="#">Renter</a>
-                            <div class="dropdown">
-                                <a href="#">Search Houses</a>
-                                <a href="#">Search Brokers</a>
-                            </div></li>
+                      <li><a href="renterhome.php">Renter</a>
+                      </li>
                      <li><a href="#">Broker</a>
                         <div class="dropdown">
                             <a href="#">Search Houses filtered by broker</a>
