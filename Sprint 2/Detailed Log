@@ -80,23 +80,23 @@ October 5, 10, 16, 17, 22 ~ 2 hours
 - Fill meeting minutes
 
 **Sarah**
-October 10 2023 - 1 hour
+October 10 2023 ~ 1 hour
 - created a skeleton of home page
 
-October 13 2023 - 2 hr
+October 13 2023 ~ 2 hr
 - made form for homebuyer appointments
 - added time to the header (this later got removed)
 - Added page to display avalible properties
 - put images for properties 
 - added individual property pages that contains unique infomration (this will be pulled from backend)
 
-October 18 2023 - 3 hr
+October 18 2023 ~ 3 hr
 - created headerfooter.html, this was suposed to make the whole website cohesive but then I realised using
 .php would be better to call the files andstore login information.
 - changed all filed to .php
 - we had a miscommunication between vanisha, sasha and I on the headder style so I reimplemented the new version that sasha built.
 
-October 25 2023 - 5hr
+October 25 2023 ~ 5hr
 - Set up local terminal for php
 - Decided that having a header.php, footer.php and sidenav.php would be easier to implement
 - Made the login button into a popup to request credentials
@@ -104,7 +104,7 @@ October 25 2023 - 5hr
 - Linked the offer forms in homebuyer to store the info in a txt file until back end is merged.
 - Eden asked me to move my stuff into the puclic folder to help with the pipeline and back end so I reconfigured.
 
-Ocotber 26 2023 - 4hr
+Ocotber 26 2023 ~ 4hr
 - To restric acess I edited in home.php. The nav bar was edited to have you select what type of user expirence you want by clicking either homebuyer. renter or broker.
   clicking any of them takes you to their own respective homepages.
 - I made each type of user their own home page that allows them to acess specific functions.
