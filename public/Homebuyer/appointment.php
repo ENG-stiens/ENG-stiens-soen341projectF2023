@@ -14,7 +14,8 @@ include 'sidenav.php';
 ?>
 <body>
     <div class="content">
-        <h1>Book an Appointment</h1> <form action="/submit_appointment" method="post">
+        <h1>Book an Appointment</h1> 
+        <form action="" method="post">
             <label for="name">Your Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
             
@@ -25,11 +26,13 @@ include 'sidenav.php';
             <input type="tel" id="phone" name="phone" required><br><br>
             
             <label for="house">House to Visit:</label><br>
-        <select id="house" name="house">
-            <option value="house1">House 1</option>
-            <option value="house2">House 2</option>
-            <option value="house3">House 3</option>
-        </select><br><br>
+            <select id="house" name="house">
+                <option value="10 Greendale">10 Greendale</option>
+                <option value="67 Grand">67 Grand</option>
+                <option value="770 Parkway">770 Parkway</option>
+                <option value="999 Casablanca">999 Casablanca</option>
+                <option value="5784 Montana">5784 Montana</option>
+            </select><br><br>
     
             <label for="date">Preferred Date:</label><br>
             <input type="date" id="date" name="date" required><br><br>
