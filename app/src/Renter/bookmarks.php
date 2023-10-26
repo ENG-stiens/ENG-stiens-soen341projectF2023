@@ -21,12 +21,11 @@
         <a href="appointment.html">Appointment</a>
         <a href="offer.html">Offer</a>
         <a href="bookmarks.html">Bookmarks</a>
-        <a href="">Log Out</a> <!-- CHANGE -->
+        <a href="">Log Out</a> 
     </div>
 
     <div class="content">
-        <h1>content area</h1> <!-- add stuff here -->
-    </div>
+        <h1>content area</h1>
 
 
 </body>
