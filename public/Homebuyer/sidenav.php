@@ -47,14 +47,12 @@
 
 <div class="wrapper">
   <div class="sidenav">
-        <a href="home.php">Home</a>
-        <a href="profile.php">Profile</a>
+        <a href="listings.php">Property Listings</a> 
         <a href="appointment.php">Appointment</a>
         <a href="offer.php">Offer</a>
         <a href="bookmarks.php">Bookmarks</a>
         <a href="mortgage.php">Mortgage Calculator</a>
-        <a href="listings.php">Property Listings</a>
-        <a href="">Log Out</a>
+        <a href="profile.php">Profile</a>
   </div>
 </div>
 

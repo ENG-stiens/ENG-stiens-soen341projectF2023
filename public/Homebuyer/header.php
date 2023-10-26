@@ -132,7 +132,7 @@ footer {
     <div class="title-container">
       <h1>
         <button onclick="displayModal()">Log in</button>
-        <img src="house.png" alt="Logo">
+        <a href="home.php"><img src="house.png" alt="Logo"></a>
         Eng-Stiens' Real Estate Aid
       </h1>
       <nav>

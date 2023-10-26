@@ -14,14 +14,21 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+
 .overlay h1 {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 3em;
     text-align: center;
 }
 <style>
