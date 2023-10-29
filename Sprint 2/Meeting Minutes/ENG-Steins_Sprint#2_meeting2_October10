@@ -13,27 +13,26 @@
 - Oleksandra
 
 **Agenda:**
-1. 
-2. 
-3. 
-4. 
+1. Overview on research done & Database
+3. Updates on back-end and front-end
+
 
 **Agenda Item 1:**
-- 
+- After some researches, we aggreed to use MySQL for our database. MySQL Workbench is a great choice for managing databases because 
+  it's easy to use, has powerful features, and lots of helpful people to assist. It helps you design, control, and improve databases, 
+  making it handy for developers. Plus, it's free and works well with MySQL databases, so it's a smart pick for anyone dealing with data.
+  Kermina volunteered to set up the database. We also talked about finding a free server for us to be able to store, manage, and provide access
+  to the data efficiently. 
 
 **Agenda Item 2:**
-- 
-
-
-**Agenda Item 3:**
--
-
-**Agenda Item 4:**
-- 
+- We created a milestone on Github to choose the color theme for the website. Each one of us went on Github and voted for their preferred theme.
+  We were not able to talk much about back-end since the progress was not going that fast.
 
 
 
-**Next Meeting Date:** 
+**Next Meeting Date:** 16 october 
 
 **Next Meeting Agenda:**
+- Login page
+- Updates on every team member tasks progression
 
