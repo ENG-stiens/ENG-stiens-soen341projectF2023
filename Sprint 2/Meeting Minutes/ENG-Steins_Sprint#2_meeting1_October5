@@ -19,7 +19,9 @@
 4. Database
 
 **Agenda Item 1:**
-- The group discussed the progress from last week and consulted our research.
+- The group discussed the progress from last week and consulted our research. We aggreed that we need to communicate more 
+  during upcoming sprints and the meeting minutes needs to be more detailed. We liked the way we did the task division for sprint#1 
+  so we decided to work the same way.
 
 **Agenda Item 2:**
 - The team was broken into 3 groups of two to tackle the main pages of the website. 
@@ -30,8 +32,9 @@
 
 **Agenda Item 3:**
 - To divide the tasks, we went over sprint #2 instructions and we would see if there is a volunteer for a specific task.
-  We agreed that Julie and Oleksandra will be responsible for the acceptance tests.
-  Vanisha and Kermina wi
+  We agreed that Julie and Oleksandra will be responsible for the acceptance tests and the CRUD operations on properties.
+  Vanisha and Kermina will be responsible for CRUD operations for brokers.
+  Sarah and Eden will be responsible for search for propertiesmand the requests to visit properties 
 
 **Agenda Item 4:**
 - While we were sitting together in the lab, we brainstormed multiple database software we could use
