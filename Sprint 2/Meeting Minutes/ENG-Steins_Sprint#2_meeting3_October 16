@@ -14,20 +14,25 @@
 
 **Agenda:**
 1. Login page restrictions
-2. Website appearence 
-3. 
+2. Website appearence & Progression in tasks
 
 **Agenda Item 1:**
-- 
+- On the login page, we proposed implementing certain restrictions to prevent scenarios where, for instance, 
+  a homebuyer would have access to sensitive information intended only for the system administrator. To achieve this, 
+  we considered requesting identification numbers from brokers and system administrators, allowing them to access specific 
+  details related to property listings and clients. After further discussion on this feature, we decided to set it aside
+  in order to concentrate our efforts on the core functionalities for sprint #2.
 
 **Agenda Item 2:**
-- 
-
-
-**Agenda Item 3:**
--
+- The front-end team has developed an initial framework for the user interface. All team members have reviewed this framework, 
+  and we reached a consensus regarding the website's visual design. There are some remaining adjustments to be made, such as 
+  finalizing the search bar, which will be completed later. On the back-end side, the databases for properties available for sale, 
+  properties available for rent, and information about brokers were already created and ready to use. Given that the database connection
+  is local, we have decided to include a duplicate copy of the database to ensure uniform naming conventions throughout our codebase.
+  Each team member was still working on their assigned task and the project is progressing smoothly.
 
 
 **Next Meeting Date:**  Undetermined
 
 **Next Meeting Agenda:**
+-Make sure all the tasks are almost completed
