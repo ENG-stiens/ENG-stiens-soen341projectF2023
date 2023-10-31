@@ -83,18 +83,18 @@ In sprint 2, we implemented new technology such as React, express and Node.
   - pros: Allows dynamic content, familiarity, broad library support
   - cons: Can impact load time if it's a heavy-duty project, needs to be optimised
   
-- Angular.js
-  - pros: Efficient (two-way data binding and dynamic), unfamiliarity
-  - cons: Steep learning curve, heavyweight for smaller projects (can affect performance)
+- React 
+  - pros: Efficient, easy to use, creates dynamic web applications
+  - cons: poor documentation, uses JSX thus steep learning curve for new developpers
+ 
+- Node.js
+  - pros: fast, productive, better perfomance
+  - cons: unstable API, lacks strong library support system 
 
 **Backend:** 
 - PHP
   - pros: Efficient for handling the server, familiarity
   - cons: May not be as fast as othe backend technologies
-  
-- Django (Python)
-  - pros: Offers strong security, robust
-  - cons: Steep learning curve, heavyweight for smaller projects
   
 - Express.js
   - pros: Easy to learn, good performance
