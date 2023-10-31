@@ -72,6 +72,8 @@ Approach: We have adopted an Agile development methodology for this project, whi
 
 Technology: To accomplish a fully functioning real-estate website, many languages and frameworks can be used. Here's a brief over view of the possibilities.
 
+In sprint 2, we implemented new technology such as React, express and Node.
+
 **Front-end:**
 - HTML
   - pros: Universality (accessible on all browsers), familiarity
