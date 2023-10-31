@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -13,21 +13,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     fwrite($file, $file_content);
     fclose($file);
 }
-?>
+?> -->
 
 <!DOCTYPE html>
 <html>
-
+    <style>
+        body{
+            background-color: #f4f4f4;
+        }
+    </style>
 <head>
     <title>Submit Your Offer</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
-<?php
-include 'header.php';
-include 'sidenav.php';
-?>
-<body>
-
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            file = elmnt.getAttribute("include-html");
+            if (file) {
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                        elmnt.removeAttribute("include-html");
+                        includeHTML();
+                    }
+                }      
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                return;
+            }
+        }
+    }
+</script>
+</head>
+<body onload="includeHTML()">  
+<div include-html="../header.html">
+</div>
+<div include-html="sidenav.html">
+  </div>
     <div class="content">
         <h1>Submit Your Offer</h1>
         <p>Please fill out the form below to submit your offer for the desired property.</p>
@@ -51,8 +78,6 @@ include 'sidenav.php';
             <input type="submit" value="Submit Offer">
         </form>
     </div>
-<?php
-include 'footer.php';
-?>
+    <div include-html="../footer.html"></div>
 </body>
 </html>
