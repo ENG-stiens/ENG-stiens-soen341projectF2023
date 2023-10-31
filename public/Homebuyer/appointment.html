@@ -7,10 +7,37 @@ include 'header.php';
     <meta charset="UTF-8">
     <title>Appointment</title>
 </head>
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            file = elmnt.getAttribute("include-html");
+            if (file) {
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                        elmnt.removeAttribute("include-html");
+                        includeHTML();
+                    }
+                }      
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                return;
+            }
+        }
+    }
+</script>
+</head>
+<body onload="includeHTML()">  
+<div include-html="../header.html">
+</div>
+<div include-html="sidenav.html">
+  </div>
 
-<?php 
-include 'sidenav.php';
-?>
 <body>
     <div class="content">
         <h1>Book an Appointment</h1>
@@ -45,8 +72,6 @@ include 'sidenav.php';
             <input type="submit" value="Book Appointment">
         </form>
     </div>
-<?php
-include 'footer.php';
-?>
+    <div include-html="../footer.html"></div>
 </body>
 </html>
