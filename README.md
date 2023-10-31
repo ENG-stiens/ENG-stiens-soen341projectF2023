@@ -129,4 +129,9 @@ As a system administrator, I need to login into my account to create, read, upda
 ## Reference to Wiki
 For additional information regarding sprint planning, git rules and guidelines, please refer to our Wiki section (https://github.com/ENG-stiens/ENG-stiens-soen341projectF2023/wiki).
 
+## Instructions to run website
+### 1. clone the repository
+### 2. on terminal within the project run npm install
+### 2. then run npm start
+
 
