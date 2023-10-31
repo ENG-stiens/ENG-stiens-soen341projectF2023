@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Eng-Stiens' Real Estate Aid</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EAEAEA;
+}
+
+header, .dropdown {
+    background-color: #BACDB0;
+    color: #2E2C2F;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: bold;
+}
+
+.title-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header h1 img {
+    margin-right: 15px;
+    width: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a, .dropdown a {
+    text-decoration: none;
+    color: #475B63;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover, .dropdown a:hover {
+    background-color: #729B79;
+}
+
+.login-button {
+    background-color: #475B63;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav li:hover .dropdown {
+    display: block;
+}
+
+footer {
+    background-color: #729B79;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.sidenav {
+    height: calc(100vh - 160px);
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 160px;
+    left: 0;
+    background-color: #2E2C2F;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 10px 15px 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #BACDB0;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a.active, .sidenav a:hover {
+    background-color: #475B63;
+    color: white;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.profile-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-body .profile-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px 0;
+}
+
+.profile-item .label {
+    font-weight: bold;
+    color: #555;
+}
+
+.profile-item .value {
+    font-weight: 300;
+    color: #777;
+}
+
+.profile-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.reset-password {
+    background-color: #729B79;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.reset-password:hover {
+    background-color: #475B63;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>
+                <button onclick="displayModal()">Log in</button>
+                <a href="../index.html"><img src="house.png" alt="Logo"></a>
+                Eng-Stiens' Real Estate Aid
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="../Homebuyer/homebuyerhome.html">Homebuyer</a></li>
+                    <li><a href="../Renter/renterhome.html">Renter</a></li>
+                    <li><a href="#">Broker</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="sidenav">
+      <a href="homepageBroker.html">Home</a>
+      <a href="homepageBroker.html" class="active">Profile</a> <!-- Notice the 'active' class here -->
+      <a href="#manageProperties">Manage Properties</a>
+      <a href="#appointments">Appointments</a>
+      <a href="#propertyMatching">Property Matching</a>
+      <a href="#offerManagement">Offer Management</a>
+    </div>
+  
+    <div class="main-content">
+
+      <div class="centered-content">
+        <h2>Welcome to Your Profile</h2>
+      
+  
+      <!-- User Profile Card -->
+      <div class="profile-card">
+          <div class="profile-header">
+              <img src="user-avatar.png" alt="User Avatar" class="profile-avatar"> <!-- you can replace with an appropriate image -->
+              <h3>John Doe</h3> <!-- this should be dynamically updated based on user's information -->
+          </div>
+  
+          <div class="profile-body">
+              <div class="profile-item">
+                  <span class="label">First Name:</span>
+                  <span class="value">John</span>
+              </div>
+              <div class="profile-item">
+                  <span class="label">Last Name:</span>
+                  <span class="value">Doe</span>
+              </div>
+              <div class="profile-item">
+                  <span class="label">Email:</span>
+                  <span class="value">johndoe@example.com</span>
+              </div>
+              <div class="profile-item">
+                  <span class="label">Phone Number:</span>
+                  <span class="value">+123 456 7890</span>
+              </div>
+          </div>
+  
+          <div class="profile-footer">
+              <button class="reset-password">Reset Password</button>
+          </div>
+      </div>
+      </div>
+  </div>
+
+    <script>
+        function displayModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

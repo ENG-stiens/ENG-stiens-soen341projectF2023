@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EAEAEA;
+}
+
+header, .dropdown {
+    background-color: #BACDB0;
+    color: #2E2C2F;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: bold;
+}
+
+.title-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header h1 img {
+    margin-right: 15px;
+    width: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a, .dropdown a {
+    text-decoration: none;
+    color: #475B63;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover, .dropdown a:hover {
+    background-color: #729B79;
+}
+
+.login-button {
+    background-color: #475B63;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav li:hover .dropdown {
+    display: block;
+}
+
+footer {
+    background-color: #729B79;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.sidenav {
+    height: calc(100vh - 160px);
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 160px;
+    left: 0;
+    background-color: #2E2C2F;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.main-content {
+    margin-left: 250px;
+}
+
+.sidenav a {
+    padding: 10px 15px 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #BACDB0;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a.active, .sidenav a:hover {
+    background-color: #475B63;
+    color: white;
+}
+
+.search-section {
+    background-color: #2E2C2F;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+.search-title {
+    color: #BACDB0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.search-input::placeholder {
+    color: #BACDB0;
+}
+
+.search-btn {
+    background-color: #475B63;
+    border: none;
+    color: #EAEAEA;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.search-btn:hover {
+    background-color: #333;
+}
+
+.property {
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.property img {
+    width: 100%;
+    display: block;
+}
+
+.property-title {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2E2C2F;
+    color: #EAEAEA;
+    text-decoration: none;
+    display: block;
+}
+
+.property-title:hover {
+    text-decoration: underline;
+}
+
+.listing-container {
+    margin: 20px 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniversalHomepage</title>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>
+                <button onclick="displayModal()">Log in</button>
+                <a href="../index.html"><img src="house.png" alt="Logo"></a>
+                Eng-Stiens' Real Estate Aid
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" >Homebuyer</a>
+                    </li>
+                    <li><a href="../Renter/renterhome.html">Renter</a>
+                    </li>
+                    <li><a href="#">Broker</a>
+
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="sidenav">
+      <a href="#" class="active">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="#manageProperties">Manage Properties</a>
+      <a href="#appointments">Appointments</a>
+      <a href="#propertyMatching">Property Matching</a>
+      <a href="#offerManagement">Offer Management</a>
+  </div>
+  
+  <div class="main-content">
+    <!-- Search Properties Section -->
+    <div class="search-section">
+      <div class="search-title">Search Properties</div>
+      <input class="search-input" type="text" placeholder="Enter property details...">
+      <button class="search-btn">&#128269;</button> <!-- This is a Unicode character for a magnifying glass -->
+    </div>
+  
+
+
+    <div class="listing-container">
+    <div class="property">
+        <img src="property1.jpg" alt="Property 1">
+        <div class="property-title">Property 1 Title</div>
+    </div>
+
+    <div class="property">
+        <img src="property2.jpg" alt="Property 2">
+        <div class="property-title">Property 2 Title</div>
+    </div>
+
+    <div class="property">
+        <img src="property3.jpg" alt="Property 3">
+        <div class="property-title">Property 3 Title</div>
+    </div>
+
+    <div class="property">
+        <img src="property4.jpg" alt="Property 4">
+        <div class="property-title">Property 4 Title</div>
+    </div>
+
+    <div class="property">
+        <img src="property5.jpg" alt="Property 5">
+        <div class="property-title">Property 5 Title</div>
+    </div>
+  </div>
+</div>
+
+
+    <script>
+        function displayModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+
+    
+</body>
+</html>
