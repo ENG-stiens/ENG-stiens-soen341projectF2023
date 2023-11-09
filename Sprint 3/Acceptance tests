@@ -1,4 +1,4 @@
-###User Story: As a homebuyer, I want to be to search for brokers###
+User Story: As a homebuyer, I want to be to search for brokers
 
 Given that I am on the homebuyer’s homepage. 
 When I enter the name of the broker in the search bar.
