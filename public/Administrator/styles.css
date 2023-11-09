@@ -1,0 +1,212 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EAEAEA;
+}
+
+
+.title-container{
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+header h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+header h1 img {
+    margin-right: 15px;
+    width: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding-top:10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+nav li{
+    position:relative;
+}
+nav a, .dropdown a {
+    text-decoration: none;
+    color: #475B63;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover, .dropdown a:hover {
+    background-color: #729B79;
+}
+
+.login-button {
+    background-color: #475B63;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    top: 10px;
+    right: 20px;
+    position:absolute;
+}
+
+.login-button:hover {
+    background-color: #2E2C2F;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+
+nav li:hover .dropdown {
+    display: block;
+}
+
+footer {
+    background-color: #729B79;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.search-container{
+    margin-left: 50px;
+}
+#search{
+    padding-left: 30px;
+    width: 1141px;
+    height: 42px;
+    border-radius: 10px;
+    background: #BACDB0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+#search::placeholder{
+    color: #EAEAEA;
+}
+
+
+
+
+.broker_CRUD_form{
+    width: 1020px;
+    height: 436px;
+    margin-top: 20px;
+    flex-shrink: 0;
+    background: #F6F6F6;
+    margin-left: 60px;
+    padding:70px ;
+    margin-bottom: 50px;
+}
+
+.broker_CRUD_form input{
+    width: 213px;
+    height: 33px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: #A4C6AA;
+    margin-bottom: 40px;
+}
+
+.update-button, .add-broker{
+    width: 137px;
+    height: 37px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #475B63;
+    color: #EAEAEA;
+    font-family: Poppins, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+
+.update-button:hover, .add-broker:hover {
+    background-color: #729B79;
+}
+
+.name-lastname, .email-phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-input,
+.lastname-input, .email-input, .phone-input {
+    flex: 1;
+    width: 50%;
+}
+
+
+.lastname-input, .phone-input{
+    margin-left: -300px;
+}
+
+.manage-brokers-title{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.center-button {
+    display: block; /* Make the button a block element */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Style the suggestion container */
+.suggestions {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+/* Style each suggestion item */
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 150px;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
