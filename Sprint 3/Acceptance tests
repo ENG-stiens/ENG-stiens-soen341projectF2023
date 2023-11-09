@@ -1,0 +1,10 @@
+###User Story: As a homebuyer, I want to be to search for brokers###
+
+Given that I am on the homebuyer’s homepage. 
+When I enter the name of the broker in the search bar.
+Then the system should display the specified broker. 
+
+Given that I am on the homebuyer’s homepage.
+When I enter the name of the broker that doesn’t exist in the search bar. 
+Then the system should display an error message indicating that this broker doesn’t exist.
+
