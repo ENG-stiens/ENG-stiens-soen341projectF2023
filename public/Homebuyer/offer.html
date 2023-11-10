@@ -9,6 +9,11 @@
     <title>Submit Your Offer</title>
 </head>
 <script>
+    function handleFormSubmit(submit) {
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
+
     function includeHTML() {
         var z, i, elmnt, file, xhttp;
         z = document.getElementsByTagName("*");
