@@ -27,7 +27,7 @@ module.exports = connection;
 //Create operation
 app.post('/api/properties/create', (req, res) => {
     const newProperty = req.body;
-    const sql = 'Insert property';
+    const sql = 'INSERT INTO properties SET ?';
     
     connection.query(sql, newProperty, (error, result) => {
         if(error){
@@ -42,7 +42,7 @@ app.post('/api/properties/create', (req, res) => {
 
  //Read operation
  app.get('/api/properties', (req, res) => {
-    const sql = 'Select from properties';
+    const sql = 'SELECT * FROM properties';
   
     connection.query(sql, (error, results) => {
       if(error){
@@ -60,7 +60,7 @@ app.put('/api/properties/:propertyId/update', (req, res) => {
     const propertyId = parseInt(req.params.propertyId, 10);
     const updatedData = req.body;
 
-    const sql = 'update properties SET ? WHRER ID = ?';
+    const sql = 'UPDATE properties SET ? WHRER ID = ?';
 
     connection.query(sql, [updatedData, propertyId], (error, result) => {
         if(error){
@@ -77,7 +77,7 @@ app.put('/api/properties/:propertyId/update', (req, res) => {
  app.delete('/api/properties/:propertyId', (req, res) => {
     const propertyId = parseInt(req.params.propertyId, 10);
     
-    const sql = 'delete from properties';
+    const sql = 'DELETE FROM properties WHERE ID = ?';
     
         connection.query(sql, propertyId, (error, results) => {
             if(error){
