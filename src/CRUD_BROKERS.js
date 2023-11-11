@@ -167,5 +167,27 @@ const deleteBroker = (id) => {
     });
 };
 
+//Search for a broker
+app.get('/searchBrokers', (req, res) => {
+    const search = req.query.search;
+
+    const sql = `
+        SELECT id, firstname, phone, email, lastname
+        FROM brokers
+        WHERE firstname LIKE ? OR lastname LIKE ?
+    `;
+    const searchTerm = `%${search}%`;
+
+    con.query(sql, [searchTerm, searchTerm], (err, results) => {
+        if (err) {
+            console.error('Cannot find brokers: ' + err.stack);
+            res.status(500).json({ error: 'Internal Server Error' });
+            return;
+        }
+        // send the results as JSON
+        res.json(results);
+    });
+});
+
 
 
