@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php
-    include 'header.php';
-    ?>
+    <link rel="stylesheet" href="styles.css">
+
     <meta charset="UTF-8">
     <title>Manage Brokers</title>
 </head>
 <body>
+
+<?php
+include 'header.html';
+include 'sidenav.html';
+?>
 
 <!-----------------------------------------------------HTML for Manage Brokers Page ----------------------------------->
 
@@ -185,7 +189,7 @@
     </form>
 </div>
 </div>
-<?php include 'footer.php';
+<?php include 'footer.html';
 ?>
 </body>
 </html>
@@ -221,13 +225,11 @@
 
 
 <!----------------------------------------------------------Universal Template ----------------------------------------->
-<footer>
-    <p>&copy; 2023 Your Real Estate Company</p>
-</footer>
+
 <!--------------------------------------------------------------------------------------------------------------------->
 
 <!-- link to the javascript code-->
-<script src="Administrator/CRUD_brokers_suggestion_autofill.js"></script>
+<script src="CRUD_brokers_suggestion_autofill.js"></script>
 
 </body>
 </html>
