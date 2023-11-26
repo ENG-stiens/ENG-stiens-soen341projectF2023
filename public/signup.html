@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+</head>
+<body>
+<h2>Signup</h2>
+<form action="../src/php/signup.php" method="post">
+  <label for="name">Name:</label>
+  <input type="text" name="name" required><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" name="lastName" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" required><br>
+
+  <label for="phoneNumber">Phone Number:</label>
+  <input type="tel" name="phoneNumber" required><br>
+
+  <label for="type">User Type:</label>
+  <select name="type" required>
+    <option value="homebuyer">Homebuyer</option>
+    <option value="broker">Broker</option>
+  </select><br>
+
+  <label for="password">Password:</label>
+  <input type="password" name="password" required><br>
+
+  <input type="submit" value="Signup">
+</form>
+</body>
+</html>
+
