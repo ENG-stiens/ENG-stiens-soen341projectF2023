@@ -3,7 +3,6 @@ body {
     background-color: #EAEAEA;
 }
 
-
 .title-container{
     text-align: center;
 
@@ -24,27 +23,6 @@ header h1 img {
     width: 40px;
 }
 
-nav ul {
-    list-style: none;
-    padding-top:10px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-nav li{
-    position:relative;
-}
-nav a, .dropdown a {
-    text-decoration: none;
-    color: #475B63;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.2s;
-}
-
-nav a:hover, .dropdown a:hover {
-    background-color: #729B79;
-}
 
 .login-button {
     background-color: #475B63;
@@ -104,17 +82,65 @@ footer {
 #search::placeholder{
     color: #EAEAEA;
 }
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: -80px;
+}
+
+.conte {
+    flex: 1;
+    padding: 20px;
+    margin-left: 300px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.cont {
+    display: flex;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    background: #2E2C2F;
+    display: block;
+}
+
+.sidenav a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: #EAEAEA;
+}
+
+.sidenav a:hover {
+    color: #BACDB0;
+}
+
+.content-area {
+    flex-grow: 1;
+    padding: 16px;
+    margin-left: -20px;
+}
 
 
 
 
 .broker_CRUD_form{
-    width: 1020px;
+    width: 800px;
     height: 436px;
     margin-top: 20px;
     flex-shrink: 0;
     background: #F6F6F6;
-    margin-left: 60px;
+    margin-left: -50px;
     padding:70px ;
     margin-bottom: 50px;
 }
@@ -210,3 +236,4 @@ footer {
 .suggestion-item:hover {
     background-color: #f0f0f0;
 }
+
