@@ -37,7 +37,7 @@
         <h1>Submit Your Offer</h1>
         <p>Please fill out the form below to submit your offer for the desired property.</p>
 
-        <form id="offer" action="send_email.php" method="post">
+        <form action="offer_email.php" method="post">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
 
@@ -53,12 +53,46 @@
             <label for="offer">Your Offer ($):</label><br>
             <input type="number" id="offer" name="offer" required><br><br>
 
-            <input type="submit" value="Book Appointment">
+            <input type="submit" value="Submit Offer">
         </form>
 
-    </div>
+
+        <?php
+        session_save_path('../../sessions');
+        session_start();
+
+        // Check if the user is logged in
+        if (isset($_SESSION['user'])) {
+            // Retrieve the user's information from the session
+            $user = $_SESSION['user'];
+
+            // Display user information
+            echo "<h2>Your Offer Details:</h2>";
+
+            // Retrieve and display offer information based on the user
+            $offers = file('../../src/data/offer.txt', FILE_IGNORE_NEW_LINES);
+            foreach ($offers as $offer) {
+                $offerData = explode(',', $offer);
+                $offerUserEmail = $offerData[1]; // Assuming email is stored at index 1
+
+                // Check if the offer belongs to the logged-in user
+                if ($offerUserEmail === $user['email']) {
+                    echo "<p>Home: {$offerData[3]} </p>";
+                    echo "<p>Offer: {$offerData[4]} </p>";
+                    echo "<p>Status: {$offerData[6]} </p>";
+                    echo "<br>";
+                    echo "<br>";
+                    // Add more details as needed
+                }
+            }
+        } else {
+            // If the user is not logged in, show a login link or redirect to the login page
+            echo "<p>Please log in to view your offer details.</p>";
+        }
+        ?>
+
 </div>
 
-    <div include-html="../footer.html"></div>
+
 </body>
 </html>

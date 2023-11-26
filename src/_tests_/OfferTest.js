@@ -1,4 +1,4 @@
-import { includeHTML, handleFormSubmit } from './offer.html';
+import { includeHTML, handleFormSubmit } from './offer.php';
 
 describe('handleFormSubmit', () => {
     it('should submit the form and update the message', () => {

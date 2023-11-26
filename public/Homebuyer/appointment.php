@@ -45,8 +45,47 @@
             <input type="submit" value="Book Appointment" action="send_email.php" method="post">
         </form>
 
+        <?php
+        session_save_path('../../sessions');
+        session_start();
+
+        // Check if the user is logged in
+        if (isset($_SESSION['user'])) {
+            // Retrieve the user's information from the session
+            $user = $_SESSION['user'];
+
+            // Display user information
+        echo "<h2>Your Appointment Details:</h2>";
+
+        // Retrieve and display appointment information based on the user
+        $appointments = file('../../src/data/appointment.txt', FILE_IGNORE_NEW_LINES);
+        foreach ($appointments as $appointment) {
+        $appointmentData = explode(',', $appointment);
+        $appointmentUserEmail = $appointmentData[1]; // Assuming email is stored at index 2
+
+        // Check if the appointment belongs to the logged-in user
+        if ($appointmentUserEmail === $user['email']) {
+        echo "<p>Home: {$appointmentData[3]} </p>";
+        echo "<p>Date: {$appointmentData[4]} </p>";
+        echo "<p>Time: {$appointmentData[5]} </p>";
+        echo "<p>Status: {$appointmentData[7]} </p>";
+        echo "<br>";
+        echo "<br>";
+        // Add more details as needed
+        // Stop after finding the first appointment for the user
+        }
+        }
+        } else {
+        // If the user is not logged in, show a login link or redirect to the login page
+        echo "<p>Please log in to view your appointment details.</p>";
+        }
+        ?>
+
     </div>
+
+
 </div>
 
+<div include-html="../footer.html"></div>
 </body>
 </html>
