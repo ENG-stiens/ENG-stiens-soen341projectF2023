@@ -1,33 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" type="text/css" href="individualproperties.css">
+<head>
+<link rel="stylesheet" type="text/css" href="../css/individualproperties.css">
+<script src="../js/includeHTML.js"></script>
+</head>
 
-    </head>
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                file = elmnt.getAttribute("include-html");
-                if (file) {
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                            elmnt.removeAttribute("include-html");
-                            includeHTML();
-                        }
-                    }      
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    return;
-                }
-            }
-        }
-    </script>
-    </head>
     <body onload="includeHTML()">  
     <div include-html="../header.html"></div> 
     <body>
@@ -38,7 +15,7 @@
             <body>
                 <div class="property-details">
                     <div class="property-image">
-                        <img src="770Parkway.jpg" alt="770 Parkway">
+                        <img src="../images/770Parkway.jpg" alt="770 Parkway">
                         <div class="banner">
                             <p>Realtor: ABC Realty</p>
                         </div>

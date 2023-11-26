@@ -1,130 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f4;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 40px;
-  color: #333;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.property {
-  margin: 20px;
-  text-align: center;
-  color: #333;
-  width: 30%;
-}
-
-.property img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-</style>
-  </head>
-  <script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            file = elmnt.getAttribute("include-html");
-            if (file) {
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                        elmnt.removeAttribute("include-html");
-                        includeHTML();
-                    }
-                }      
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                return;
-            }
-        }
-    }
-</script>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Listings</title>
+    <script src="../js/includeHTML.js"></script>
 </head>
-<body onload="includeHTML()">  
-<div include-html="../header.html">
-</div>
-<div include-html="sidenav.html">
+
+<body onload="includeHTML()">
+<div include-html="../header.html"></div>
+
+<div class="cont">
+  <div class="sidenav" include-html="sidenav.html"></div>
+
+  <div class="content-area">
+
+    <h1>Properties for Sale</h1>
+
+
+      <input id="search" type="text" name="query" placeholder="Search...">
+      <button class= "searchProp" onclick="search()">Search</button>
+
+    <div class="gallery">
+
+
+        <div class="property">
+            <a href="10Greendale.html"><img src="../images/10Greendale.jpg" alt="10
+              Greendale"></a>
+            <p>10 Greendale</p>
+        </div>
+
+
+        <div class="property">
+            <a href="5784Montana.html"><img src="../images/5784Montana.jpeg" alt="5784
+              Montana"></a>
+            <p>5784 Montana</p>
+        </div>
+
+
+        <div class="property">
+            <a href="770Parkway.html"><img src="../images/770Parkway.jpg" alt="770 Parkway"></a>
+            <p>770 Parkway</p>
+        </div>
+
+
+        <div class="property">
+            <a href="999Casablanca.html"><img src="../images/999Casablanca.jpg" alt="999
+              Casablanca"></a>
+            <p>999 Casablanca</p>
+        </div>
+
+
+        <div class="property">
+            <a href="67Grand.html"><img src="../images/67Grand.jpg" alt="67 Grand"></a>
+            <p>67 Grand</p>
+        </div>
+
+    </div>
   </div>
 </div>
-     <div class="content">
-      <button onclick="search()">Search</button>
-     </div>
-    <input type="text" name="query" placeholder="Search...">
-    <input type="submit" value="Search">
-    <div class="content">
-      <h1>Properties for Sale</h1>
-      <div class="gallery">
-        <div class="property">
-          <a href="10Greendale.html"><img src="10Greendale.jpg" alt="10
-              Greendale"></a>
-          <p>10 Greendale</p>
-        </div>
-        <div class="property">
-          <a href="5784Montana.html"><img src="5784Montana.jpeg" alt="5784
-              Montana"></a>
-          <p>5784 Montana</p>
-        </div>
-        <div class="property">
-          <a href="770Parkway.html"><img src="770Parkway.jpg" alt="770 Parkway"></a>
-          <p>770 Parkway</p>
-        </div>
-        <div class="property">
-          <a href="999Casablanca.html"><img src="999Casablanca.jpg" alt="999
-              Casablanca"></a>
-          <p>999 Casablanca</p>
-        </div>
-        <div class="property">
-          <a href="67Grand.html"><img src="67Grand.jpg" alt="67 Grand"></a>
-          <p>67 Grand</p>
-        </div>
-      </div>
-    </div>
 
+<script src="../js/searchProperties.js"></script>
+    <div include-html="../footer.html"></div>
+</body>
 
-      <script>
-        function search() {
-          const searchTerm = document.getElementById('searchInput').value;
-          fetch(`/search?query=${searchTerm}`)
-                  .then(response => response.json())
-                  .then(data => {
-                    displayResults(data);
-                  });
-        }
-
-        function displayResults(results) {
-          const resultsContainer = document.getElementById('searchResults');
-          resultsContainer.innerHTML = '';
-
-          for (const result of results) {
-            const listItem = document.createElement('div');
-            // Display the desired fields or all fields as needed
-            listItem.textContent = `${result.name}, ${result.city}`;
-            resultsContainer.appendChild(listItem);
-          }
-        }
-      </script>
-          <div include-html="../footer.html"></div>
-  </body>
-  </html>
+</html>

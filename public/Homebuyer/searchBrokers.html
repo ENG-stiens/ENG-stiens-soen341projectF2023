@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/includeHTML.js"></script>
+
+</head>
+
+<body onload="includeHTML()">
+
+<div include-html="../header.html"></div>
+
+<div class="cont">
+    <div class="sidenav" include-html="sidenav.html"></div>
+
+    <div class="content-area">
+
+        <h1> Search Brokers </h1>
+
+        <!-- search bar -->
+        <div class="search-container">
+            <!-- add the back-end /searchBrokers method (read brokers database)
+             it would be nice to have suggestions pop up when the user types, but its not necessary because it can be complicated-->
+            <form action="/searchBrokers" method="get" class="searchBar_brokers">
+                <input type="text" name="search" id="search" placeholder="Search Brokers">
+                <div id="search-suggestions" class="suggestions"></div>
+            </form>
+        </div>
+
+        <br><br>
+
+        <!-- container to show broker information-->
+        <div class="brokerInfo"></div>
+        <br><br>
+        <!-- constainer to show information for the properties owned by the broker-->
+        <div class="propertyList"></div>
+    </div>
+</div>
+
+<script src="../js/searchBrokers.js"></script>
+<div include-html="../footer.html"></div>
+</body>
+</html>
+
+

@@ -1,0 +1,176 @@
+.container{
+    margin-left: 300px;
+}
+
+#search{
+    padding-left: 30px;
+    width: 800px;
+    height: 42px;
+    border-radius: 10px;
+    background: #BACDB0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+#search::placeholder{
+    color: #EAEAEA;
+}
+
+.infoBox {
+    font-size: 20px;
+    width: 213px;
+    height: 33px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: #A4C6AA;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.labelsInfo {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.labelsInfo > div {
+    margin-right: 150px;
+}
+
+.propertyList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+.property {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.property img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 300px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.cont {
+    display: flex;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    background: #2E2C2F;
+    display: block;
+}
+
+.sidenav a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: #EAEAEA;
+}
+
+.sidenav a:hover {
+    color: #BACDB0;
+}
+
+.content-area {
+    flex-grow: 1;
+    padding: 16px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.property {
+    margin: 20px;
+    text-align: center;
+    color: #333;
+    width: 30%;
+}
+
+.property img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+
+.content-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.property {
+    margin: 20px;
+    text-align: center;
+    color: #333;
+    width: 30%;
+}
+
+.property img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.searchProp{
+    width: 100px;
+    height: 42px;
+    border-radius: 10px;
+    background: #BACDB0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
