@@ -22,9 +22,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "^3.0.1"
   },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
