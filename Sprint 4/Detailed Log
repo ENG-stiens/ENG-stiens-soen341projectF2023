@@ -1,1 +1,14 @@
+**Vanisha**
 
+November 25th 2023: ~ 2 hour
+- implemented the login/signup system
+- fixed the styles of some of the pages
+
+
+November 26th 2023 ~ 5 hour
+- refactored the code to follow a specific structure
+- removed unnesarry files
+- fixed link redirection
+- moved all the css and client-side JavaScript in a separate folder
+- fixed the manage brokers functionality
+- Only tested the website for the functionalities I have worked on for sprint 1,2,3,4
