@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/includeHTML.js"></script>
+    <link rel="stylesheet" href="../css/homebuyerStyles.css">
+    <title>listings</title>
+</head>
+
+<body onload="includeHTML()">  
+<div include-html="../components/header.html">
+</div>
+<div include-html="sidenav.html">
+  </div>
+</div>
+     <div class="content">
+      <button onclick="search()">Search</button>
+     </div>
+    <input type="text" name="query" placeholder="Search...">
+    <input type="submit" value="Search">
+    <div class="content">
+      <h1>Properties for Sale</h1>
+      <div class="gallery">
+        <div class="property">
+          <a href="10Greendale.html"><img src="../images/10Greendale.jpg" alt="10
+              Greendale"></a>
+          <p>10 Greendale</p>
+        </div>
+        <div class="property">
+          <a href="5784Montana.html"><img src="../images/5784Montana.jpeg" alt="5784
+              Montana"></a>
+          <p>5784 Montana</p>
+        </div>
+        <div class="property">
+          <a href="770Parkway.html"><img src="../images/770Parkway.jpg" alt="770 Parkway"></a>
+          <p>770 Parkway</p>
+        </div>
+        <div class="property">
+          <a href="999Casablanca.html"><img src="../images/999Casablanca.jpg" alt="999
+              Casablanca"></a>
+          <p>999 Casablanca</p>
+        </div>
+        <div class="property">
+          <a href="67Grand.html"><img src="../images/67Grand.jpg" alt="67 Grand"></a>
+          <p>67 Grand</p>
+        </div>
+      </div>
+    </div>
+
+
+      <script>
+        function search() {
+          const searchTerm = document.getElementById('searchInput').value;
+          fetch(`/search?query=${searchTerm}`)
+                  .then(response => response.json())
+                  .then(data => {
+                    displayResults(data);
+                  });
+        }
+
+        function displayResults(results) {
+          const resultsContainer = document.getElementById('searchResults');
+          resultsContainer.innerHTML = '';
+
+          for (const result of results) {
+            const listItem = document.createElement('div');
+            // Display the desired fields or all fields as needed
+            listItem.textContent = `${result.name}, ${result.city}`;
+            resultsContainer.appendChild(listItem);
+          }
+        }
+      </script>
+          <div include-html="../components/footer.html"></div>
+  </body>
+  </html>

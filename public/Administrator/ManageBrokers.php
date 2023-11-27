@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/adminStyles.css">
     <script src="../js/includeHTML.js"></script>
 
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
 
         <div class = "content">
             <div class="broker_CRUD_form">
-                <form id="broker-form" action="/updateBroker" method="post">  <!-- check if good -->
+                <form id="broker-form" action="../../src/php/updateBroker.php" method="post">  <!-- check if good -->
                     <h3>Update Broker</h3>
                     <label for="idbroker_info">ID:</label>
                     <br>
@@ -123,9 +123,6 @@
             </div>
 
 
-
-
-
             <div class="broker_CRUD_form">
                 <form id="broker-form" action="../../src/php/deleteBroker.php" method="post">  <!-- check if good -->
                     <h3>Delete Broker</h3>
@@ -147,9 +144,6 @@
                         </div>
                     </div>
 
-
-
-
                     <br>
                     <br>
 
@@ -161,21 +155,8 @@
                 </form>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
     </div>
 </div>
-
-
-
 
 <div include-html="../components/footer.html"></div>
 </body>

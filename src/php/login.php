@@ -37,11 +37,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($userType === 'broker') {
             header('Location: ../../public/Broker/homepageBroker.html');
         }
-        if ($userType === 'administrator') {
+        else if ($userType === 'administrator') {
             header('Location: ../../public/Administrator/ManageBrokers.php');
         }
         else {
-            header('Location: ../../public/Homebuyer/listings.html');
+            header('Location: ../../public/HomebuyerAndRenter/listings.html');
         }
         exit();
     } else {

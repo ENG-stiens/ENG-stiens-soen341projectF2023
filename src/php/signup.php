@@ -39,6 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Add the new user and redirect to login page
     addUser($name, $lastName, $email, $phoneNumber, $type, $password);
-    header('Location: ../../public/index.html');
+    header('Location: ../../index.html');
     exit();
 }

@@ -1,90 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .background {
-            background-image: url('5784Montana.jpeg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #ffffff;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .overlay h1 {
-            text-align: center;
-            margin: 0;
-            padding: 20px 0;
-            font-size: 3em;
-        }
-
-        .start-journey-button {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1.5em;
-            margin: 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .start-journey-button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <script src="../js/includeHTML.js"></script>
+    <link rel="stylesheet" href="../css/brokerStyles.css">
+    <title>Home</title>
 </head>
-<script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            file = elmnt.getAttribute("include-html");
-            if (file) {
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                        elmnt.removeAttribute("include-html");
-                        includeHTML();
-                    }
-                }      
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                return;
-            }
-        }
-    }
-</script>
-</head>
+
 <body onload="includeHTML()">  
-<div include-html="../header.html"></div>    <div class="background">
+<div include-html="../components/header.html"></div>    <div class="background">
         <div class="overlay">
             <h1>Welcome Broker</h1>  
             <a href="homepageBroker.html" class="start-journey-button">Start your journey</a>  
         </div>
     </div>
-    <div include-html="../footer.html"></div>
+    <div include-html="../components/footer.html"></div>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Brokers</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/adminStyles.css">
     <script src="../js/includeHTML.js"></script>
 </head>
 
