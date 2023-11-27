@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mortgage Calculator</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
         input {
             width: 100%;
             padding: 8px;
@@ -34,6 +24,8 @@
             font-weight: bold;
         }
     </style>
+
+    
 </head>
 <body>
 
@@ -76,10 +68,8 @@
             var n = loanTerm * 12;
             var mortgagePayment = (homePrice - downPayment) * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
 
-            // Display result
             document.getElementById("result").innerHTML = "Monthly Mortgage Payment: $" + mortgagePayment.toFixed(2);
         }
     </script>
-
 </body>
 </html>
