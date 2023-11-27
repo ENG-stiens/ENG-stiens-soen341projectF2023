@@ -76,13 +76,62 @@
             }
         }
     }
+
+    function startJourney() {
+        var username = prompt("Enter your username:");
+        var password = prompt("Enter your password:");
+
+        if (username && password) {
+            if (validateLogin(username, password)) {
+                window.location.href = "listings.html";
+            } else {
+                var createAccount = confirm("No account found. Do you want to create an account?");
+                if (createAccount) {
+                    createAccountPrompt();
+                }
+            }
+        }
+    }
+
+    function validateLogin(username, password) {
+        // Perform actual validation logic here (e.g., check against a database)
+        // For demonstration purposes, a simple check is performed here
+        var accounts = readAccounts();
+        return accounts.some(account => account.username === username && account.password === password);
+    }
+
+    function createAccountPrompt() {
+        var newUsername = prompt("Enter your new username:");
+        var newPassword = prompt("Enter your new password:");
+        var confirmPassword = prompt("Confirm your new password:");
+        var accountType = prompt("Do you want to create a homebuyer or a renter account?").toLowerCase();
+
+        if (newPassword === confirmPassword && (accountType === "homebuyer" || accountType === "renter")) {
+            var accounts = readAccounts();
+            accounts.push({ username: newUsername, password: newPassword, type: accountType });
+            writeAccounts(accounts);
+            alert("Account created successfully! You can now log in.");
+            startJourney();  // After account creation, prompt to log in again
+        } else {
+            alert("Invalid input or passwords do not match. Account creation failed.");
+        }
+    }
+
+    function readAccounts() {
+        var storedAccounts = localStorage.getItem('userAccounts');
+        return storedAccounts ? JSON.parse(storedAccounts) : [];
+    }
+
+    function writeAccounts(accounts) {
+        localStorage.setItem('userAccounts', JSON.stringify(accounts));
+    }
 </script>
 </head>
 <body onload="includeHTML()">  
 <div include-html="../header.html"></div>    <div class="background">
         <div class="overlay">
             <h1>Welcome Homebuyer</h1>  
-            <a href="listings.html" class="start-journey-button">Start your journey</a>  
+            <button onclick="startJourney()" class="start-journey-button">Start your journey</button>  
         </div>
     </div>
     <div include-html="../footer.html"></div>
