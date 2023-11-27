@@ -1,0 +1,45 @@
+/* adminStyles.css */
+
+body {
+    text-align: center;
+    line-height: 1; /* This will double space the content */
+    font-family: Arial, sans-serif; /* Use a commonly available font */
+}
+
+.container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.signup {
+    width: 80%; /* Adjust the form width as needed */
+    margin: 20px auto; /* Center the form horizontally with some top margin */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px; /* Add some space below each label */
+}
+
+input,
+select {
+    margin-bottom: 15px; /* Add some space below each input or select */
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
