@@ -2,14 +2,85 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mortgage.css">
     <script src="../js/includeHTML.js"></script>
     <meta charset="UTF-8">
     <title>Mortgage Calculator</title>
+    <style>
+        input {
+            width: 700px;
+            padding: 8px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px; /* Adjust the value as needed */
+        }
+    </style>
 </head>
 
 <body onload="includeHTML()">
 <div include-html="../components/header.html"></div>
 <div include-html="sidenav.html"></div>
+<div class="container">
+    <h2>Mortgage Calculator</h2>
+    <label for="homePrice">Home Price:</label>
+    <input type="number" id="homePrice" placeholder="Enter home price">
+
+    <label for="downPayment">Down Payment:</label>
+    <input type="number" id="downPayment" placeholder="Enter down payment">
+
+    <label for="loanTerm">Loan Term (years):</label>
+    <input type="number" id="loanTerm" placeholder="Enter loan term in years">
+
+    <label for="interestRate">Annual Interest Rate (%):</label>
+    <input type="number" step="0.01" id="interestRate" placeholder="Enter annual interest rate">
+
+    <button onclick="calculateMortgage()">Calculate</button>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateMortgage() {
+            var homePrice = document.getElementById("homePrice").value;
+            var downPayment = document.getElementById("downPayment").value;
+            var loanTerm = document.getElementById("loanTerm").value;
+            var interestRate = document.getElementById("interestRate").value;
+
+            homePrice = parseFloat(homePrice);
+            downPayment = parseFloat(downPayment);
+            loanTerm = parseFloat(loanTerm);
+            interestRate = parseFloat(interestRate);
+
+            if (isNaN(homePrice) || isNaN(downPayment) || isNaN(loanTerm) || isNaN(interestRate)) {
+                alert("Please enter valid numerical values.");
+                return;
+            }
+
+            var r = (interestRate / 100) / 12;
+            var n = loanTerm * 12;
+            var mortgagePayment = (homePrice - downPayment) * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
+
+            document.getElementById("result").innerHTML = "Monthly Mortgage Payment: $" + mortgagePayment.toFixed(2);
+        }
+    </script>
+
+</div>
 <div include-html="../components/footer.html"></div>
 </body>
 </html>
