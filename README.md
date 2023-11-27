@@ -131,7 +131,6 @@ For additional information regarding sprint planning, git rules and guidelines, 
 
 ## Instructions to run website
 1. clone the repository
-2. on terminal within the project run npm install
-3. then run npm start
+2. run php -S 127.0.0.1:8000 (in the ENG-stiens-soen341projectF2023 directory)
 
 
