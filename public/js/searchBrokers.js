@@ -125,8 +125,8 @@ properties.forEach(property => { // reads each property and displays
 // not sure how to code the back-end
 // will need to fetch data form the properties database and get information on the properties owned by the searched broker
    const mockProperties = [
-                          { image: '10Greendale.jpg', price: '123 443$', address: '12 Sunshine Street', rooms: '2', bathrooms: '2' },
-{ image: '67Grand.jpg', price: '100 000$', address: '67 St-Laurent', rooms: '5', bathrooms: '2' },
+                          { image: '/public/images/10Greendale.jpg', price: '123 443$', address: '12 Sunshine Street', rooms: '2', bathrooms: '2' },
+{ image: '/public/images/67Grand.jpg', price: '100 000$', address: '67 St-Laurent', rooms: '5', bathrooms: '2' },
 ];
 
 // display data
