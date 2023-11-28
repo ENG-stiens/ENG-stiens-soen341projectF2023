@@ -29,4 +29,38 @@ function displayPropertyInfo(propertyData) {
 
 // function to create a box to display the information of property
 function createInfoElement(label, value) {
-    const infoElement = do
+    const infoElement = document.createElement('div');
+    infoElement.innerHTML = `
+        <p>${label}</p>
+        <div class="infoBox">${value}</div>
+    `;
+    return infoElement;
+}
+
+// form submission
+// test data
+function searchProperty() {
+    const mockPropertyData = {
+        address: '10 Greendale',
+        agency: 'ABC Realty',
+        phone: '123-456-7890',
+        description: 'Beautiful Single Family Home',
+        price: '$500,000',
+        amenities: 'Spacious backyard, modern kitchen, garage',
+    };
+    
+    // display data
+    displayPropertyInfo(mockPropertyData);
+}
+
+// searchBrokers function
+const searchForm = document.querySelector('.searchBar_properties');
+searchForm.addEventListener('submit', event => {
+    event.preventDefault();
+    searchProperty();
+});
+
+// Run your tests
+// Call functions and check the console for the expected output
+// Example:
+searchProperty();
