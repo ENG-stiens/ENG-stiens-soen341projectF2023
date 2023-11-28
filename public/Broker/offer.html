@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <script src="../js/includeHTML.js"></script>
+    <link rel="stylesheet" href="../css/homebuyerStyles.css">
     <title>Submit Your Offer</title>
 </head>
+
+<body onload="includeHTML()">  
+    <div include-html="../components/header.html">
+    </div>
+    <div include-html="sidenav.html">
 <script>
     function handleFormSubmit(submit) {
         event.preventDefault();
@@ -35,10 +40,6 @@
         }
         };
 </script>
-<body onload="includeHTML()">
-<div include-html="../header.html">
-</div>
-<div include-html="sidenav.html">
 </div>
 <div class="content">
     <h1>Submit Your Offer</h1>
