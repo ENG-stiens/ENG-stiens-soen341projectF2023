@@ -40,5 +40,5 @@ November 27 2023 ~ 2 hours
 
 November 28 2023 ~ 2 hours
 - Fixed search for properties
-- Continued working on unit tests for the 2 new functionalities (mortgage calculator and offer management)
+- Finished unit tests for the 2 functionalities (mortgage calculator and search for properties)
 - Fixed the appointements feature (request visits and manage)
