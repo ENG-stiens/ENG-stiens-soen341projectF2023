@@ -7,55 +7,45 @@
     <title>UniversalHomepage</title>
     <script src="../js/includeHTML.js"></script>
 </head>
-<body onload="includeHTML()">  
-    <div include-html="../components/header.html"></div>
-    <div include-html="sidenav.html"></div>
-   
-  
-  <div class="main-content">
-    <!-- Search Properties Section -->
-    <div class="search-section">
-      <div class="search-title">Search Properties</div>
-      <input class="search-input" type="text" placeholder="Enter property details...">
-      <button class="search-btn">&#128269;</button> <!-- This is a Unicode character for a magnifying glass -->
+<body onload="includeHTML()">
+<div include-html="../components/header.html"></div>
+<div include-html="sidenav.html"></div>
+
+<div class="listing-container">
+    <div class="property">
+        <img src="property1.jpg" alt="Property 1">
+        <div class="property-title">Property 1 Title</div>
     </div>
 
-    <div class="listing-container">
-      <div class="property">
-          <img src="property1.jpg" alt="Property 1">
-          <div class="property-title">Property 1 Title</div>
-      </div>
-
-      <div class="property">
-          <img src="property2.jpg" alt="Property 2">
-          <div class="property-title">Property 2 Title</div>
-      </div>
-
-      <div class="property">
-          <img src="property3.jpg" alt="Property 3">
-          <div class="property-title">Property 3 Title</div>
-      </div>
-
-      <div class="property">
-          <img src="property4.jpg" alt="Property 4">
-          <div class="property-title">Property 4 Title</div>
-      </div>
-
-      <div class="property">
-          <img src="property5.jpg" alt="Property 5">
-          <div class="property-title">Property 5 Title</div>
-      </div>
+    <div class="property">
+        <img src="property2.jpg" alt="Property 2">
+        <div class="property-title">Property 2 Title</div>
     </div>
-  </div>
 
-  <script>
-      function displayModal() {
-          document.getElementById("myModal").style.display = "block";
-      }
-      function closeModal() {
-          document.getElementById("myModal").style.display = "none";
-      }
-  </script>
-  <div include-html="../components/footer.html"></div>
+    <div class="property">
+        <img src="property3.jpg" alt="Property 3">
+        <div class="property-title">Property 3 Title</div>
+    </div>
+
+    <div class="property">
+        <img src="property4.jpg" alt="Property 4">
+        <div class="property-title">Property 4 Title</div>
+    </div>
+
+    <div class="property">
+        <img src="property5.jpg" alt="Property 5">
+        <div class="property-title">Property 5 Title</div>
+    </div>
+</div>
+
+<script>
+    function displayModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+</script>
+<div include-html="../components/footer.html"></div>
 </body>
 </html>
