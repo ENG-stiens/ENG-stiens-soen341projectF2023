@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/includeHTML.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Search Properties</title>
+</head>
+<body onload="includeHTML()">
+<div include-html="../components/header.html"></div>
+<div include-html="sidenav.html"></div>
+<!-----------------------------------------------------HTML for Search Properties ----------------------------------->
+
+<div class="container">
+    <h1> Search Properties </h1>
+
+    <!-- search bar -->
+    <div class="search-container">
+        <form action="/searchProperty" method="get" class="searchBar_properties">
+            <input type="text" name="search" id="search" placeholder="Search Properties">
+            <div id="search-suggestions" class="suggestions"></div>
+        </form>
+    </div>
+
+    <br><br>
+
+    <!-- container to show property information-->
+    <div class="propertyInfo"></div>
+    <br><br>
+
+</div>
+<script src="../js/searchProperty.js"></script>
+</body>
+</html>
