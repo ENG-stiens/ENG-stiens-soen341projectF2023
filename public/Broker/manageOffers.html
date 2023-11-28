@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../js/includeHTML.js"></script>
+    <title>Manage Offers</title>
+</head>
+<body>
+<div class="content">
+    <h1>Manage Offers</h1>
+
+    <h2>View Offers</h2>
+    <div id="offersList"></div>
+
+    <h2>Accept or Reject Offers</h2>
+    <form id="acceptRejectForm">
+        <label for="offerId">Offer ID:</label>
+        <input type="text" id="offerId" name="offerId" required>
+        <button type="button" onclick="acceptOffer()">Accept</button>
+        <button type="button" onclick="rejectOffer()">Reject</button>
+    </form>
+
+    <div id="responseMessage"></div>
+</div>
+
+<!-- Include your footer here -->
+
+<script>
+    function includeHTML() {
+        // Include your existing includeHTML function here
+    }
+
+    function fetchOffers() {
+        fetch('view_offers.php')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('offersList').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error fetching offers:', error);
+            });
+    }
+
+    function acceptOffer() {
+        const offerId = document.getElementById('offerId').value;
+        fetch('accept_offer.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'offer_id=' + encodeURIComponent(offerId),
+        })
+            .then(response => response.text())
+            .then(message => {
+                document.getElementById('responseMessage').textContent = message;
+                fetchOffers(); // Refresh the offers list after accepting or rejecting
+            })
+            .catch(error => {
+                console.error('Error accepting offer:', error);
+            });
+    }
+
+    function rejectOffer() {
+        const offerId = document.getElementById('offerId').value;
+        fetch('reject_offer.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'offer_id=' + encodeURIComponent(offerId),
+        })
+            .then(response => response.text())
+            .then(message => {
+                document.getElementById('responseMessage').textContent = message;
+                fetchOffers(); // Refresh the offers list after accepting or rejecting
+            })
+            .catch(error => {
+                console.error('Error rejecting offer:', error);
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        includeHTML();
+        fetchOffers(); // Fetch offers when the page loads
+    });
+</script>
+
+</body>
+</html>
