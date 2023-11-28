@@ -1,34 +1,38 @@
-// Define a function to simulate user input
-function simulateUserInput(homePrice, downPayment, loanTerm, interestRate) {
-    document.getElementById("homePrice").value = homePrice;
-    document.getElementById("downPayment").value = downPayment;
-    document.getElementById("loanTerm").value = loanTerm;
-    document.getElementById("interestRate").value = interestRate;
-}
+//Test for mortgage calculator
+// Mock document.getElementById
+document.getElementById = jest.fn((id) => {
+    if (id === "homePrice" || id === "downPayment" || id === "loanTerm" || id === "interestRate") {
+        return { value: '' };
+    } else if (id === "result") {
+        return { innerHTML: '' };
+    }
+});
 
-// Define a function to reset the input values
-function resetInputs() {
-    document.getElementById("homePrice").value = "";
-    document.getElementById("downPayment").value = "";
-    document.getElementById("loanTerm").value = "";
-    document.getElementById("interestRate").value = "";
-}
+// Mock window.alert
+window.alert = jest.fn();
 
-// Define a function to test the calculateMortgage function
-function testCalculateMortgage() {
-    // Test Case 1: Valid input
-    simulateUserInput(300000, 60000, 30, 4);
-    calculateMortgage();
-    let result1 = document.getElementById("result").innerHTML;
-    console.assert(result1 === "Monthly Mortgage Payment: $1,145.80", "Test Case 1 Failed");
+// Test cases
+describe('Calculate Mortgage', () => {
+    test('it should calculate mortgage payment correctly', () => {
+        // Mock user input
+        document.getElementById.mockReturnValueOnce({ value: '300000' }); // Mock homePrice
+        document.getElementById.mockReturnValueOnce({ value: '60000' });  // Mock downPayment
+        document.getElementById.mockReturnValueOnce({ value: '30' });      // Mock loanTerm
+        document.getElementById.mockReturnValueOnce({ value: '4' });       // Mock interestRate
 
-    // Test Case 2: Invalid input (NaN)
-    resetInputs();
-    simulateUserInput("invalid", 60000, 30, 4);
-    calculateMortgage();
-    let result2 = document.getElementById("result").innerHTML;
-    console.assert(result2 === "", "Test Case 2 Failed");
-}
+        calculateMortgage();
 
-// Run the tests
-testCalculateMortgage();
+        const resultContainer = document.getElementById("result");
+        expect(resultContainer.innerHTML).toBe("Monthly Mortgage Payment: $1,145.80");
+    });
+
+    test('it should handle invalid input', () => {
+        // Mock invalid user input
+        document.getElementById.mockReturnValueOnce({ value: 'invalid' }); // Mock homePrice
+
+        calculateMortgage();
+
+        // Ensure alert is called
+        expect(window.alert).toHaveBeenCalledWith("Please enter valid numerical values.");
+    });
+});
