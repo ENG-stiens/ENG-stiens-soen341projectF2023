@@ -60,7 +60,7 @@ searchForm.addEventListener('submit', event => {
     searchProperty();
 });
 
-// Run your tests
+// To Run the tests:
 // Call functions and check the console for the expected output
-// Example:
+// For Example:
 searchProperty();
