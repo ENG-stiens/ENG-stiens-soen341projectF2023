@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="../js/includeHTML.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile - Eng-Stiens' Real Estate Aid</title>
@@ -220,79 +221,60 @@ footer {
       
     </style>
 </head>
-<body>
-    <header>
-        <div class="title-container">
-            <h1>
-                <button onclick="displayModal()">Log in</button>
-                <a href="../../index.html"><img src="house.png" alt="Logo"></a>
-                Eng-Stiens' Real Estate Aid
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="../HomebuyerAndRenter/homebuyerhome.html">Homebuyer</a></li>
-                    <li><a href="../Renter/renterhome.html">Renter</a></li>
-                    <li><a href="#">Broker</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <div class="sidenav">
-        <a href="#" class="active">Home</a>
-        <a href="profile.html">Profile</a>
-        <a href="offer.html">Submit Offer</a>
-        <a href="manageOffers.html"> Manage Offers</a>
+<body onload="includeHTML()">
+<div include-html="../components/header.html">
+</div>
+<div class="content">
+
+    <div include-html="sidenav.html">
     </div>
-  
-    <div class="main-content">
 
-      <div class="centered-content">
+    <div class="centered-content">
         <h2>Welcome to Your Profile</h2>
-      
-  
-      <!-- User Profile Card -->
-      <div class="profile-card">
-          <div class="profile-header">
-              <img src="user-avatar.png" alt="User Avatar" class="profile-avatar"> <!-- you can replace with an appropriate image -->
-              <h3>Asha Paris</h3> <!-- this should be dynamically updated based on user's information -->
-          </div>
-  
-          <div class="profile-body">
-              <div class="profile-item">
-                  <span class="label">First Name:</span>
-                  <span class="value">John</span>
-              </div>
-              <div class="profile-item">
-                  <span class="label">Last Name:</span>
-                  <span class="value">Doe</span>
-              </div>
-              <div class="profile-item">
-                  <span class="label">Email:</span>
-                  <span class="value">johndoe@example.com</span>
-              </div>
-              <div class="profile-item">
-                  <span class="label">Phone Number:</span>
-                  <span class="value">+123 456 7890</span>
-              </div>
-          </div>
-  
-          <div class="profile-footer">
-              <button class="reset-password">Reset Password</button>
-          </div>
-      </div>
-      </div>
-  </div>
 
-    <script>
-        function displayModal() {
-            document.getElementById("myModal").style.display = "block";
-        }
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-    </script>
 
+        <!-- User Profile Card -->
+        <div class="profile-card">
+            <div class="profile-header">
+                <img src="user-avatar.png" alt="User Avatar" class="profile-avatar"> <!-- you can replace with an appropriate image -->
+                <h3>Asha Paris</h3> <!-- this should be dynamically updated based on user's information -->
+            </div>
+
+            <div class="profile-body">
+                <div class="profile-item">
+                    <span class="label">First Name:</span>
+                    <span class="value">John</span>
+                </div>
+                <div class="profile-item">
+                    <span class="label">Last Name:</span>
+                    <span class="value">Doe</span>
+                </div>
+                <div class="profile-item">
+                    <span class="label">Email:</span>
+                    <span class="value">johndoe@example.com</span>
+                </div>
+                <div class="profile-item">
+                    <span class="label">Phone Number:</span>
+                    <span class="value">+123 456 7890</span>
+                </div>
+            </div>
+
+            <div class="profile-footer">
+                <button class="reset-password">Reset Password</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div include-html="/public/components/footer.html"></div>
+<script>
+    function displayModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+</script>
 </body>
 </html>
