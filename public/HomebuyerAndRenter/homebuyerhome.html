@@ -5,13 +5,36 @@
     <link rel="stylesheet" href="../css/homebuyerStyles.css">
 </head>
 
-<body onload="includeHTML()">  
-<div include-html="../components/header.html"></div>    <div class="background">
-        <div class="overlay">
-            <h1>Welcome Homebuyer</h1>  
-            <a href="listings.html" class="start-journey-button">Start your journey</a>  
-        </div>
+<body onload="includeHTML()">
+<div include-html="../components/header.html"></div>
+<div class="background">
+    <div class="overlay">
+        <!-- Updated ID here -->
+        <h1 id="welcome-text">Welcome Homebuyer</h1>
+        <a href="listings.html" class="start-journey-button">Start your journey</a>
     </div>
-    <div include-html="../components/footer.html"></div>
+</div>
+<div include-html="../components/footer.html"></div>
+
+<script>
+    // Check if the user type is already set (e.g., if the user refreshed the page)
+    const storedUserType = localStorage.getItem('userType');
+    if (storedUserType) {
+        // Corrected function call with the correct ID
+        updateWelcomeMessage(storedUserType);
+    }
+
+    // Function to update the welcome message based on the user type
+    function updateWelcomeMessage(userType) {
+        // Corrected ID here
+        const welcomeMessage = document.getElementById("welcome-text");
+        if (userType === "renter") {
+            welcomeMessage.innerText = "Welcome Renter";
+        } else {
+            welcomeMessage.innerText = "Welcome Homebuyer";
+        }
+    }
+</script>
+
 </body>
 </html>

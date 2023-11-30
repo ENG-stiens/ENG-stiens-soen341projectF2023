@@ -44,8 +44,31 @@
         <a href="listings.html">Property Listings</a> 
         <a href="appointment.html">Appointment</a>
         <a href="manageAppointments.html">Manage Appointments</a>
-        <a href="mortgage.html">Mortgage Calculator</a>
-        <a href="searchBrokers.html">Search Brokers</a>
+
+
+
+     <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      const userType = localStorage.getItem('userType');
+      const sidenav = document.querySelector('.sidenav');
+
+      if (userType === 'renter') {
+      // Remove mortgage calculator link
+      const mortgageLink = sidenav.querySelector('a[href="mortgage.html"]');
+      if (mortgageLink) {
+      mortgageLink.remove();
+      }
+      } else {
+      // Include mortgage calculator link for other user types
+      const mortgageLink = document.createElement('a');
+      mortgageLink.href = 'mortgage.html';
+      mortgageLink.textContent = 'Mortgage Calculator';
+      sidenav.appendChild(mortgageLink);
+      }
+      });
+      </script>
+
+      <a href="searchBrokers.html">Search Brokers</a>
       <a href="searchProperties.html">Search Properties</a>
 
   </div>
