@@ -18,13 +18,12 @@
 
 
 **Agenda Item 1:**
-- The group discussed the progress done in sprint #3. We liked the way we were working as a team to create a good product but we aggreed 
-  that we still needed to communicate more often and give each other updates on our individual work.
-  
+- The group discussed the progress done in sprint #3. We were satisfied by our teamwork progress, but we agreed we should talk 
+  more often and keep each other informed about our individual tasks.
 
 **Agenda Item 2:**
-- To divide the tasks, we went over sprint #4 instructions and we created a google document with the diffrent tasks. If there is a volunteer for a 
-  specific task, he would simply put his name beside it.
+- To divide the tasks, we went over sprint #4 instructions and we created a google document with the diffrent tasks. 
+  If there is a volunteer for a specific task, he would simply put his name beside it.
   We agreed that Julie and Kermina will be responsible for the 2 acceptance tests.
   Vanisha will be responsible for the log in page and the reorganization of the files structure.
   Sarah will be responsible for the mortgage calculator.
@@ -32,7 +31,10 @@
   Finally, for the code review, we aggreed that everyone of us will review our code and leave comments if necessary.
 
 **Agenda Item 3:**
-- We took a decision as a group to hardcode every data we need since it was getting more hard to manage the database and the server.
+- As a team, we collectively decided to switch to hardcoding all the necessary data. Managing the database and server was becoming
+  increasingly challenging, so we agreed that each team member would update their code from previous sprints to align with this new decision. 
+  Hardcoding was chosen for its simplicity, reducing code complexity, making it more understandable, and maintaining client-side performance. 
+  Hardcoded data will also improve the performance of our website since the data is readily available in the code.
 
 
 
