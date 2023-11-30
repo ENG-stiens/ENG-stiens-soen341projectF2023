@@ -10,17 +10,15 @@ function includeHTML() {
                     if (this.status == 200) {
                         elmnt.innerHTML = this.responseText;
 
-                        // Check user type and modify sidenav accordingly
+                    
                         const userType = localStorage.getItem('userType');
                         if (userType === 'renter') {
-                            // Remove mortgage calculator link
                             const sidenav = elmnt.querySelector('.sidenav');
                             const mortgageLink = sidenav.querySelector('a[href="mortgage.html"]');
                             if (mortgageLink) {
                                 mortgageLink.remove();
                             }
                         } else {
-                            // Include mortgage calculator link for other user types
                             const mortgageLink = document.createElement('a');
                             mortgageLink.href = 'mortgage.html';
                             mortgageLink.textContent = 'Mortgage Calculator';
@@ -40,9 +38,7 @@ function includeHTML() {
 
     window.setUserType = function (type) {
         localStorage.setItem('userType', type);
-        includeHTML(); // Re-run includeHTML after setting user type
+        includeHTML();
     };
 }
-
-// Run includeHTML() on page load
 includeHTML();
