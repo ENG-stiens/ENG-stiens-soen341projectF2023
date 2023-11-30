@@ -53,13 +53,13 @@
       const sidenav = document.querySelector('.sidenav');
 
       if (userType === 'renter') {
-      // Remove mortgage calculator link
+      // remove mortgage calculator
       const mortgageLink = sidenav.querySelector('a[href="mortgage.html"]');
       if (mortgageLink) {
       mortgageLink.remove();
       }
       } else {
-      // Include mortgage calculator link for other user types
+      // put mortgage calculator
       const mortgageLink = document.createElement('a');
       mortgageLink.href = 'mortgage.html';
       mortgageLink.textContent = 'Mortgage Calculator';
